@@ -10,86 +10,89 @@ export default function PrivacyPolicyPage() {
           <div className="max-w-3xl mx-auto px-6">
 
             <h1 className="font-serif font-light text-warm-800 text-4xl mb-10">
-              Privacy Policy
+              Informativa sulla Privacy
             </h1>
 
             <div className="space-y-12 text-warm-600 leading-relaxed">
 
-              {/* Section 1 */}
+              {/* Sezione 1 */}
               <div>
-                <h2 className="font-serif text-warm-800 text-2xl mb-4">1. Privacy at a Glance</h2>
+                <h2 className="font-serif text-warm-800 text-2xl mb-4">1. Panoramica sulla Privacy</h2>
 
                 <div className="space-y-6">
                   <div>
-                    <h3 className="font-serif text-warm-800 text-xl mb-2">General Information</h3>
+                    <h3 className="font-serif text-warm-800 text-xl mb-2">Informazioni Generali</h3>
                     <p>
-                      The following information provides a simple overview of what happens to your personal data
-                      when you visit this website. Personal data is any data by which you can be personally
-                      identified. For detailed information on the subject of data protection, please refer to our
-                      privacy policy listed below this text.
+                      Le seguenti informazioni forniscono una panoramica semplice su cosa succede ai tuoi dati personali
+                      quando visiti questo sito web. I dati personali sono tutti i dati attraverso i quali puoi essere
+                      identificata personalmente. Per informazioni dettagliate sul tema della protezione dei dati, ti
+                      invitiamo a consultare la nostra informativa sulla privacy riportata di seguito.
                     </p>
                   </div>
 
                   <div>
-                    <h3 className="font-serif text-warm-800 text-xl mb-2">Data Collection on This Website</h3>
+                    <h3 className="font-serif text-warm-800 text-xl mb-2">Raccolta Dati su Questo Sito Web</h3>
 
-                    <p className="font-medium text-warm-700 mt-3 mb-1">Who is responsible for data collection on this website?</p>
+                    <p className="font-medium text-warm-700 mt-3 mb-1">Chi è responsabile della raccolta dei dati su questo sito web?</p>
                     <p>
-                      Data processing on this website is carried out by the website operator. You can find their
-                      contact details in the section "Information about the responsible party" in this privacy
-                      policy.
+                      Il trattamento dei dati su questo sito web viene effettuato dal gestore del sito web. Puoi trovare
+                      i dettagli di contatto nella sezione "Informazioni sul responsabile del trattamento" di questa
+                      informativa sulla privacy.
                     </p>
 
-                    <p className="font-medium text-warm-700 mt-4 mb-1">How do we collect your data?</p>
+                    <p className="font-medium text-warm-700 mt-4 mb-1">Come raccogliamo i tuoi dati?</p>
                     <p>
-                      Some data is collected when you provide it to us — for example, data you enter into a
-                      contact form. Other data is collected automatically or with your consent when you visit
-                      the website through our IT systems. This includes primarily technical data (e.g. internet
-                      browser, operating system, or time of page access). This data is collected automatically
-                      as soon as you enter this website.
+                      Alcuni dati vengono raccolti quando ce li fornisci, ad esempio i dati che inserisci in un modulo
+                      di contatto. Altri dati vengono raccolti automaticamente o con il tuo consenso quando visiti il
+                      sito web tramite i nostri sistemi informatici. Si tratta principalmente di dati tecnici (es.
+                      browser internet, sistema operativo o orario di accesso alla pagina). Questi dati vengono raccolti
+                      automaticamente non appena accedi a questo sito web.
                     </p>
 
-                    <p className="font-medium text-warm-700 mt-4 mb-1">What do we use your data for?</p>
+                    <p className="font-medium text-warm-700 mt-4 mb-1">Per cosa utilizziamo i tuoi dati?</p>
                     <p>
-                      Some data is collected to ensure the error-free operation of the website. Other data may
-                      be used to analyze your user behavior.
+                      Alcuni dati vengono raccolti per garantire il corretto funzionamento del sito web. Altri dati
+                      possono essere utilizzati per analizzare il tuo comportamento come utente.
                     </p>
 
-                    <p className="font-medium text-warm-700 mt-4 mb-1">What rights do you have regarding your data?</p>
+                    <p className="font-medium text-warm-700 mt-4 mb-1">Quali diritti hai riguardo ai tuoi dati?</p>
                     <p>
-                      You have the right at any time to receive free information about the origin, recipient, and
-                      purpose of your stored personal data. You also have the right to request the correction or
-                      deletion of this data. If you have given consent to data processing, you can revoke this
-                      consent at any time for the future. You also have the right to request the restriction of
-                      the processing of your personal data under certain circumstances. Furthermore, you have the
-                      right to lodge a complaint with the competent supervisory authority.
+                      Hai il diritto di ricevere gratuitamente, in qualsiasi momento, informazioni sull'origine,
+                      sul destinatario e sullo scopo dei tuoi dati personali memorizzati. Hai anche il diritto di
+                      richiedere la correzione o la cancellazione di questi dati. Se hai dato il consenso al
+                      trattamento dei dati, puoi revocarlo in qualsiasi momento per il futuro. Hai inoltre il
+                      diritto di richiedere la limitazione del trattamento dei tuoi dati personali in determinate
+                      circostanze. Hai infine il diritto di presentare un reclamo all'autorità di controllo competente.
                     </p>
                     <p className="mt-2">
-                      For this and any other questions regarding data protection, you can contact us at any time.
+                      Per questo e qualsiasi altra domanda riguardante la protezione dei dati, puoi contattarci
+                      in qualsiasi momento.
                     </p>
                   </div>
 
                   <div>
-                    <h3 className="font-serif text-warm-800 text-xl mb-2">Analytics and Third-Party Tools</h3>
+                    <h3 className="font-serif text-warm-800 text-xl mb-2">Analytics e Strumenti di Terze Parti</h3>
                     <p>
-                      When you visit this website, your browsing behavior may be statistically analyzed. This is
-                      done primarily with so-called analytics programs. Detailed information about these analytics
-                      programs can be found in the following privacy policy.
+                      Quando visiti questo sito web, il tuo comportamento di navigazione può essere analizzato
+                      statisticamente. Questo avviene principalmente tramite i cosiddetti programmi di analisi.
+                      Informazioni dettagliate su questi programmi di analisi sono disponibili nella seguente
+                      informativa sulla privacy.
                     </p>
                   </div>
                 </div>
               </div>
 
-              {/* Section 2 */}
+              {/* Sezione 2 */}
               <div>
                 <h2 className="font-serif text-warm-800 text-2xl mb-4">2. Hosting</h2>
-                <p>We host the content of our website with the following provider:</p>
+                <p>Ospitiamo i contenuti del nostro sito web con il seguente fornitore:</p>
 
                 <div className="mt-4">
                   <h3 className="font-serif text-warm-800 text-xl mb-2">Vercel</h3>
                   <p>
-                    The provider is Vercel Inc., 340 Pine Street, Suite 701, San Francisco, CA 94104, USA
-                    (hereinafter "Vercel"). For details, please refer to Vercel's privacy policy:{' '}
+                    Il fornitore è Vercel Inc., 340 Pine Street, Suite 701, San Francisco, CA 94104, USA
+                    (di seguito "Vercel"). Per ulteriori dettagli, ti invitiamo a consultare l'informativa sulla
+                    privacy di Vercel:{' '}
                     <a
                       href="https://vercel.com/legal/privacy-policy"
                       target="_blank"
@@ -101,59 +104,60 @@ export default function PrivacyPolicyPage() {
                     .
                   </p>
                   <p className="mt-3">
-                    The use of Vercel is based on Art. 6 para. 1 lit. f GDPR. We have a legitimate interest in
-                    presenting our website as reliably as possible. Where a corresponding consent has been
-                    requested, processing is carried out exclusively on the basis of Art. 6 para. 1 lit. a GDPR
-                    and § 25 para. 1 TTDSG, insofar as the consent covers the storage of cookies or access to
-                    information on the user's device within the meaning of TTDSG. Consent can be revoked at any
-                    time.
+                    L'utilizzo di Vercel si basa sull'art. 6 par. 1 lett. f GDPR. Abbiamo un interesse legittimo
+                    a presentare il nostro sito web nel modo più affidabile possibile. Laddove sia stato richiesto
+                    il relativo consenso, il trattamento viene effettuato esclusivamente sulla base dell'art. 6
+                    par. 1 lett. a GDPR e dell'art. 25 par. 1 TTDSG, nella misura in cui il consenso riguarda
+                    la memorizzazione di cookie o l'accesso a informazioni sul dispositivo dell'utente ai sensi
+                    del TTDSG. Il consenso può essere revocato in qualsiasi momento.
                   </p>
 
                   <div className="mt-4">
-                    <h3 className="font-serif text-warm-800 text-lg mb-2">Data Processing Agreement</h3>
+                    <h3 className="font-serif text-warm-800 text-lg mb-2">Accordo sul Trattamento dei Dati</h3>
                     <p>
-                      We have concluded a data processing agreement (DPA) for the use of the above-mentioned
-                      service. This is a contract required by data protection law that ensures Vercel processes
-                      the personal data of our website visitors only in accordance with our instructions and in
-                      compliance with the GDPR.
+                      Abbiamo concluso un accordo sul trattamento dei dati (DPA) per l'utilizzo del servizio
+                      sopra menzionato. Si tratta di un contratto richiesto dalla normativa sulla protezione
+                      dei dati che garantisce che Vercel tratti i dati personali dei visitatori del nostro
+                      sito web esclusivamente in conformità con le nostre istruzioni e nel rispetto del GDPR.
                     </p>
                   </div>
                 </div>
               </div>
 
-              {/* Section 3 */}
+              {/* Sezione 3 */}
               <div>
-                <h2 className="font-serif text-warm-800 text-2xl mb-4">3. General Information and Mandatory Disclosures</h2>
+                <h2 className="font-serif text-warm-800 text-2xl mb-4">3. Informazioni Generali e Obblighi di Comunicazione</h2>
 
                 <div className="space-y-6">
                   <div>
                     <h3 className="font-serif text-warm-800 text-xl mb-2">Privacy</h3>
                     <p>
-                      The operators of these pages take the protection of your personal data very seriously. We
-                      treat your personal data confidentially and in accordance with statutory data protection
-                      regulations and this privacy policy.
+                      I gestori di queste pagine prendono molto sul serio la protezione dei tuoi dati personali.
+                      Trattiamo i tuoi dati personali in modo riservato e in conformità con le disposizioni
+                      normative in materia di protezione dei dati e con la presente informativa sulla privacy.
                     </p>
                     <p className="mt-3">
-                      When you use this website, various personal data is collected. Personal data is data by
-                      which you can be personally identified. This privacy policy explains what data we collect
-                      and how we use it. It also explains how and for what purpose this is done.
+                      Quando utilizzi questo sito web, vengono raccolti vari dati personali. I dati personali sono
+                      dati attraverso i quali puoi essere identificata personalmente. La presente informativa sulla
+                      privacy spiega quali dati raccogliamo e come li utilizziamo. Spiega anche come e per quale
+                      scopo ciò avviene.
                     </p>
                     <p className="mt-3">
-                      We draw your attention to the fact that data transmission over the internet (e.g.
-                      communication by email) may be subject to security vulnerabilities. Complete protection
-                      of data from access by third parties is not possible.
+                      Ti invitiamo a notare che la trasmissione di dati tramite internet (ad es. la comunicazione
+                      via e-mail) può essere soggetta a vulnerabilità di sicurezza. Una protezione completa dei dati
+                      dall'accesso da parte di terzi non è possibile.
                     </p>
                   </div>
 
                   <div>
-                    <h3 className="font-serif text-warm-800 text-xl mb-2">Information about the Responsible Party</h3>
-                    <p>The responsible party for data processing on this website is:</p>
+                    <h3 className="font-serif text-warm-800 text-xl mb-2">Informazioni sul Responsabile del Trattamento</h3>
+                    <p>Il responsabile del trattamento dei dati su questo sito web è:</p>
                     <p className="mt-2">
                       Sarah + Timon Mann<br />
-                      Rechov HaReem 16, 9090230, Israel
+                      Rechov HaReem 16, 9090230, Israele
                     </p>
                     <p className="mt-2">
-                      Phone: +49 (0)1567 8472684<br />
+                      Telefono: +49 (0)1567 8472684<br />
                       Email:{' '}
                       <a
                         href="mailto:kontakt@babyschlummerland.de"
@@ -163,345 +167,356 @@ export default function PrivacyPolicyPage() {
                       </a>
                     </p>
                     <p className="mt-3">
-                      Legal Notice:{' '}
+                      Note Legali:{' '}
                       <a
                         href="/legal"
                         className="text-blush-500 hover:text-blush-600 transition-colors"
                       >
-                        landoflittledreamers.com/legal
+                        Informazioni Legali
                       </a>
                     </p>
                     <p className="mt-3">
-                      The responsible party is the natural or legal person who, alone or jointly with others,
-                      determines the purposes and means of the processing of personal data (e.g. names, email
-                      addresses, etc.).
+                      Il responsabile del trattamento è la persona fisica o giuridica che, da sola o insieme ad altri,
+                      determina le finalità e i mezzi del trattamento dei dati personali (ad es. nomi, indirizzi
+                      e-mail, ecc.).
                     </p>
                   </div>
 
                   <div>
-                    <h3 className="font-serif text-warm-800 text-xl mb-2">Storage Duration</h3>
+                    <h3 className="font-serif text-warm-800 text-xl mb-2">Durata della Conservazione</h3>
                     <p>
-                      Unless a more specific storage period has been stated within this privacy policy, your
-                      personal data will remain with us until the purpose for data processing no longer applies.
-                      If you assert a justified request for deletion or revoke your consent to data processing,
-                      your data will be deleted unless we have other legally permissible reasons for storing
-                      your personal data (e.g. tax or commercial law retention periods); in the latter case,
-                      the data will be deleted once these reasons cease to apply.
+                      Salvo che nella presente informativa sulla privacy sia stato indicato un periodo di conservazione
+                      più specifico, i tuoi dati personali rimarranno presso di noi fino a quando la finalità del
+                      trattamento non sarà più applicabile. Se fai valere una richiesta di cancellazione legittima
+                      o revochi il consenso al trattamento dei dati, i tuoi dati verranno cancellati a meno che non
+                      abbiamo altri motivi legalmente ammissibili per conservare i tuoi dati personali (ad es.
+                      periodi di conservazione fiscali o commerciali); in quest'ultimo caso, i dati verranno
+                      cancellati una volta che tali motivi cessano di applicarsi.
                     </p>
                   </div>
 
                   <div>
-                    <h3 className="font-serif text-warm-800 text-xl mb-2">General Information on the Legal Basis for Data Processing on This Website</h3>
+                    <h3 className="font-serif text-warm-800 text-xl mb-2">Informazioni Generali sulla Base Giuridica del Trattamento dei Dati su Questo Sito Web</h3>
                     <p>
-                      If you have consented to data processing, we process your personal data on the basis of
-                      Art. 6 para. 1 lit. a GDPR or Art. 9 para. 2 lit. a GDPR if special categories of data
-                      pursuant to Art. 9 para. 1 GDPR are processed. In the event of express consent to the
-                      transfer of personal data to third countries, data processing is also carried out on the
-                      basis of Art. 49 para. 1 lit. a GDPR. If you have consented to the storage of cookies or
-                      to access to information on your device (e.g. via device fingerprinting), data processing
-                      is additionally based on § 25 para. 1 TTDSG. Consent can be revoked at any time. Where
-                      your data is required for the performance of a contract or to carry out pre-contractual
-                      measures, we process your data on the basis of Art. 6 para. 1 lit. b GDPR. Furthermore,
-                      we process your data where required to fulfill a legal obligation on the basis of Art. 6
-                      para. 1 lit. c GDPR. Data processing may also be carried out on the basis of our
-                      legitimate interest pursuant to Art. 6 para. 1 lit. f GDPR. Information about the
-                      relevant legal basis in each individual case is provided in the following sections of
-                      this privacy policy.
+                      Se hai acconsentito al trattamento dei dati, trattiamo i tuoi dati personali sulla base
+                      dell'art. 6 par. 1 lett. a GDPR o dell'art. 9 par. 2 lett. a GDPR se vengono trattate
+                      categorie particolari di dati ai sensi dell'art. 9 par. 1 GDPR. In caso di consenso
+                      espresso al trasferimento di dati personali a paesi terzi, il trattamento dei dati viene
+                      effettuato anche sulla base dell'art. 49 par. 1 lett. a GDPR. Se hai acconsentito alla
+                      memorizzazione di cookie o all'accesso a informazioni sul tuo dispositivo (ad es. tramite
+                      device fingerprinting), il trattamento dei dati si basa inoltre sull'art. 25 par. 1 TTDSG.
+                      Il consenso può essere revocato in qualsiasi momento. Se i tuoi dati sono necessari per
+                      l'esecuzione di un contratto o per l'attuazione di misure precontrattuali, trattiamo i
+                      tuoi dati sulla base dell'art. 6 par. 1 lett. b GDPR. Trattiamo inoltre i tuoi dati ove
+                      necessario per adempiere a un obbligo legale sulla base dell'art. 6 par. 1 lett. c GDPR.
+                      Il trattamento dei dati può inoltre essere effettuato sulla base del nostro legittimo
+                      interesse ai sensi dell'art. 6 par. 1 lett. f GDPR. Informazioni sulla base giuridica
+                      pertinente in ciascun caso individuale sono fornite nelle seguenti sezioni di questa
+                      informativa sulla privacy.
                     </p>
                   </div>
 
                   <div>
-                    <h3 className="font-serif text-warm-800 text-xl mb-2">Recipients of Personal Data</h3>
+                    <h3 className="font-serif text-warm-800 text-xl mb-2">Destinatari dei Dati Personali</h3>
                     <p>
-                      In the course of our business activities, we work with various external parties. This
-                      sometimes requires the transfer of personal data to these external parties. We only share
-                      personal data with external parties where this is necessary for the performance of a
-                      contract, where we are legally obligated to do so (e.g. disclosure of data to tax
-                      authorities), where we have a legitimate interest in the transfer pursuant to Art. 6
-                      para. 1 lit. f GDPR, or where another legal basis permits the transfer. When we use
-                      data processors, we only share personal data of our customers on the basis of a valid
-                      data processing agreement. In the case of joint processing, a joint processing agreement
-                      is concluded.
+                      Nell'ambito delle nostre attività commerciali, collaboriamo con vari soggetti esterni.
+                      Ciò richiede a volte il trasferimento di dati personali a questi soggetti esterni.
+                      Condividiamo i dati personali con soggetti esterni solo laddove ciò sia necessario per
+                      l'esecuzione di un contratto, laddove siamo legalmente obbligati a farlo (ad es.
+                      divulgazione di dati alle autorità fiscali), laddove abbiamo un interesse legittimo al
+                      trasferimento ai sensi dell'art. 6 par. 1 lett. f GDPR, o laddove un'altra base giuridica
+                      autorizzi il trasferimento. Quando utilizziamo responsabili del trattamento, condividiamo
+                      i dati personali dei nostri clienti solo sulla base di un accordo valido sul trattamento
+                      dei dati. In caso di trattamento congiunto, viene concluso un accordo di trattamento
+                      congiunto.
                     </p>
                   </div>
 
                   <div>
-                    <h3 className="font-serif text-warm-800 text-xl mb-2">Revocation of Your Consent to Data Processing</h3>
+                    <h3 className="font-serif text-warm-800 text-xl mb-2">Revoca del Consenso al Trattamento dei Dati</h3>
                     <p>
-                      Many data processing operations are only possible with your express consent. You can
-                      revoke consent you have already given at any time. The legality of data processing that
-                      took place prior to the revocation remains unaffected.
+                      Molte operazioni di trattamento dei dati sono possibili solo con il tuo consenso espresso.
+                      Puoi revocare il consenso già dato in qualsiasi momento. La liceità del trattamento dei
+                      dati avvenuto prima della revoca rimane impregiudicata.
                     </p>
                   </div>
 
                   <div>
                     <h3 className="font-serif text-warm-800 text-xl mb-2">
-                      Right to Object to Data Collection in Special Cases and to Direct Marketing (Art. 21 GDPR)
+                      Diritto di Opposizione alla Raccolta dei Dati in Casi Speciali e al Marketing Diretto (Art. 21 GDPR)
                     </h3>
                     <p className="uppercase text-sm leading-relaxed">
-                      WHERE DATA PROCESSING IS CARRIED OUT ON THE BASIS OF ART. 6 PARA. 1 LIT. E OR F GDPR,
-                      YOU HAVE THE RIGHT AT ANY TIME TO OBJECT TO THE PROCESSING OF YOUR PERSONAL DATA ON
-                      GROUNDS ARISING FROM YOUR PARTICULAR SITUATION; THIS ALSO APPLIES TO PROFILING BASED ON
-                      THESE PROVISIONS. THE RESPECTIVE LEGAL BASIS ON WHICH PROCESSING IS BASED CAN BE FOUND
-                      IN THIS PRIVACY POLICY. IF YOU OBJECT, WE WILL NO LONGER PROCESS YOUR AFFECTED PERSONAL
-                      DATA UNLESS WE CAN DEMONSTRATE COMPELLING LEGITIMATE GROUNDS FOR THE PROCESSING WHICH
-                      OVERRIDE YOUR INTERESTS, RIGHTS AND FREEDOMS, OR THE PROCESSING SERVES THE ASSERTION,
-                      EXERCISE OR DEFENSE OF LEGAL CLAIMS (OBJECTION PURSUANT TO ART. 21 PARA. 1 GDPR).
+                      LADDOVE IL TRATTAMENTO DEI DATI VENGA EFFETTUATO SULLA BASE DELL'ART. 6 PAR. 1 LETT. E O F GDPR,
+                      HAI IL DIRITTO IN QUALSIASI MOMENTO DI OPPORTI AL TRATTAMENTO DEI TUOI DATI PERSONALI PER
+                      MOTIVI DERIVANTI DALLA TUA SITUAZIONE PARTICOLARE; QUESTO SI APPLICA ANCHE ALLA PROFILAZIONE
+                      BASATA SU TALI DISPOSIZIONI. LA RISPETTIVA BASE GIURIDICA SU CUI SI BASA IL TRATTAMENTO PUÒ
+                      ESSERE TROVATA NELLA PRESENTE INFORMATIVA SULLA PRIVACY. SE TI OPPONI, NON ELABOREREMO PIÙ
+                      I TUOI DATI PERSONALI INTERESSATI A MENO CHE NON POSSIAMO DIMOSTRARE MOTIVI LEGITTIMI COGENTI
+                      PER IL TRATTAMENTO CHE PREVALGONO SUI TUOI INTERESSI, DIRITTI E LIBERTÀ, O IL TRATTAMENTO
+                      SERVE PER L'ACCERTAMENTO, L'ESERCIZIO O LA DIFESA DI PRETESE LEGALI (OPPOSIZIONE AI SENSI
+                      DELL'ART. 21 PAR. 1 GDPR).
                     </p>
                     <p className="uppercase text-sm leading-relaxed mt-3">
-                      WHERE YOUR PERSONAL DATA IS PROCESSED FOR DIRECT MARKETING PURPOSES, YOU HAVE THE RIGHT
-                      TO OBJECT AT ANY TIME TO THE PROCESSING OF PERSONAL DATA CONCERNING YOU FOR SUCH
-                      MARKETING; THIS ALSO APPLIES TO PROFILING INSOFAR AS IT IS CONNECTED WITH SUCH DIRECT
-                      MARKETING. IF YOU OBJECT, YOUR PERSONAL DATA WILL SUBSEQUENTLY NO LONGER BE USED FOR
-                      DIRECT MARKETING PURPOSES (OBJECTION PURSUANT TO ART. 21 PARA. 2 GDPR).
+                      LADDOVE I TUOI DATI PERSONALI VENGANO TRATTATI PER FINALITÀ DI MARKETING DIRETTO, HAI IL
+                      DIRITTO DI OPPORTI IN QUALSIASI MOMENTO AL TRATTAMENTO DEI DATI PERSONALI CHE TI RIGUARDANO
+                      PER TALE MARKETING; QUESTO SI APPLICA ANCHE ALLA PROFILAZIONE NELLA MISURA IN CUI SIA
+                      CONNESSA A TALE MARKETING DIRETTO. SE TI OPPONI, I TUOI DATI PERSONALI NON SARANNO PIÙ
+                      UTILIZZATI PER FINALITÀ DI MARKETING DIRETTO (OPPOSIZIONE AI SENSI DELL'ART. 21 PAR. 2 GDPR).
                     </p>
                   </div>
 
                   <div>
-                    <h3 className="font-serif text-warm-800 text-xl mb-2">Right to Lodge a Complaint with the Competent Supervisory Authority</h3>
+                    <h3 className="font-serif text-warm-800 text-xl mb-2">Diritto di Presentare Reclamo all'Autorità di Controllo Competente</h3>
                     <p>
-                      In the event of breaches of the GDPR, data subjects have the right to lodge a complaint
-                      with a supervisory authority, in particular in the Member State of their habitual
-                      residence, their place of work, or the place of the alleged breach. This right to lodge
-                      a complaint exists without prejudice to any other administrative or judicial remedy.
+                      In caso di violazioni del GDPR, gli interessati hanno il diritto di presentare un reclamo
+                      a un'autorità di controllo, in particolare nello Stato membro della loro residenza abituale,
+                      del loro luogo di lavoro o del luogo della presunta violazione. Il diritto di presentare
+                      reclamo esiste senza pregiudizio per qualsiasi altro rimedio amministrativo o giudiziario.
                     </p>
                   </div>
 
                   <div>
-                    <h3 className="font-serif text-warm-800 text-xl mb-2">Right to Data Portability</h3>
+                    <h3 className="font-serif text-warm-800 text-xl mb-2">Diritto alla Portabilità dei Dati</h3>
                     <p>
-                      You have the right to have data that we process automatically on the basis of your
-                      consent or in fulfillment of a contract handed over to you or to a third party in a
-                      commonly used, machine-readable format. If you request the direct transfer of data to
-                      another responsible party, this will only be done insofar as it is technically feasible.
+                      Hai il diritto di ricevere i dati che trattiamo automaticamente sulla base del tuo consenso
+                      o in adempimento di un contratto, consegnati a te o a terzi in un formato comune leggibile
+                      da macchina. Se richiedi il trasferimento diretto dei dati a un altro responsabile del
+                      trattamento, ciò avverrà solo nella misura in cui sia tecnicamente fattibile.
                     </p>
                   </div>
 
                   <div>
-                    <h3 className="font-serif text-warm-800 text-xl mb-2">Access, Rectification and Deletion</h3>
+                    <h3 className="font-serif text-warm-800 text-xl mb-2">Accesso, Rettifica e Cancellazione</h3>
                     <p>
-                      Within the scope of applicable legal provisions, you have the right at any time to
-                      obtain free information about your stored personal data, its origin and recipient, and
-                      the purpose of data processing, and, if applicable, a right to rectification or deletion
-                      of this data. For this and other questions on the subject of personal data, you can
-                      contact us at any time.
+                      Nell'ambito delle disposizioni di legge applicabili, hai il diritto in qualsiasi momento
+                      di ottenere gratuitamente informazioni sui tuoi dati personali memorizzati, sulla loro
+                      origine e destinatario, e sullo scopo del trattamento dei dati e, se del caso, un diritto
+                      alla rettifica o alla cancellazione di tali dati. Per questo e altre domande sul tema dei
+                      dati personali, puoi contattarci in qualsiasi momento.
                     </p>
                   </div>
 
                   <div>
-                    <h3 className="font-serif text-warm-800 text-xl mb-2">Right to Restriction of Processing</h3>
-                    <p>You have the right to request the restriction of the processing of your personal data. You can contact us at any time for this purpose. The right to restriction of processing applies in the following cases:</p>
+                    <h3 className="font-serif text-warm-800 text-xl mb-2">Diritto alla Limitazione del Trattamento</h3>
+                    <p>Hai il diritto di richiedere la limitazione del trattamento dei tuoi dati personali. Puoi contattarci in qualsiasi momento per questo scopo. Il diritto alla limitazione del trattamento si applica nei seguenti casi:</p>
                     <ul className="list-disc pl-6 mt-2 space-y-2">
                       <li>
-                        If you dispute the accuracy of your personal data stored with us, we usually need time
-                        to verify this. For the duration of the verification, you have the right to request
-                        the restriction of the processing of your personal data.
+                        Se contesti l'esattezza dei tuoi dati personali memorizzati presso di noi, di solito abbiamo
+                        bisogno di tempo per verificarlo. Per la durata della verifica, hai il diritto di richiedere
+                        la limitazione del trattamento dei tuoi dati personali.
                       </li>
                       <li>
-                        If the processing of your personal data was/is unlawful, you can request the
-                        restriction of data processing instead of deletion.
+                        Se il trattamento dei tuoi dati personali era/è illecito, puoi richiedere la limitazione
+                        del trattamento dei dati invece della cancellazione.
                       </li>
                       <li>
-                        If we no longer need your personal data but you need it to exercise, defend, or assert
-                        legal claims, you have the right to request restriction of processing instead of
-                        deletion.
+                        Se non abbiamo più bisogno dei tuoi dati personali ma tu ne hai bisogno per esercitare,
+                        difendere o far valere pretese legali, hai il diritto di richiedere la limitazione del
+                        trattamento invece della cancellazione.
                       </li>
                       <li>
-                        If you have lodged an objection pursuant to Art. 21 para. 1 GDPR, a balance must be
-                        struck between your interests and ours. As long as it has not yet been determined
-                        whose interests prevail, you have the right to request the restriction of processing
-                        of your personal data.
+                        Se hai presentato un'opposizione ai sensi dell'art. 21 par. 1 GDPR, deve essere effettuato
+                        un bilanciamento tra i tuoi interessi e i nostri. Finché non è stato ancora determinato
+                        i cui interessi prevalgono, hai il diritto di richiedere la limitazione del trattamento
+                        dei tuoi dati personali.
                       </li>
                     </ul>
                     <p className="mt-3">
-                      Where processing of your personal data has been restricted, such data may — apart from
-                      being stored — only be processed with your consent or for the purpose of asserting,
-                      exercising, or defending legal claims, or protecting the rights of another natural or
-                      legal person, or for reasons of important public interest of the European Union or a
-                      Member State.
+                      Laddove il trattamento dei tuoi dati personali sia stato limitato, tali dati possono —
+                      fatte salve le ipotesi di archiviazione — essere trattati solo con il tuo consenso o per
+                      l'accertamento, l'esercizio o la difesa di pretese legali, oppure per la tutela dei diritti
+                      di un'altra persona fisica o giuridica, o per motivi di interesse pubblico rilevante
+                      dell'Unione Europea o di uno Stato membro.
                     </p>
                   </div>
 
                   <div>
-                    <h3 className="font-serif text-warm-800 text-xl mb-2">SSL/TLS Encryption</h3>
+                    <h3 className="font-serif text-warm-800 text-xl mb-2">Crittografia SSL/TLS</h3>
                     <p>
-                      For security reasons and to protect the transmission of confidential content, such as
-                      orders or inquiries that you send to us as the site operator, this site uses SSL or TLS
-                      encryption. You can recognize an encrypted connection by the fact that the address bar
-                      of the browser changes from "http://" to "https://" and by the lock symbol in your
-                      browser line.
+                      Per motivi di sicurezza e per proteggere la trasmissione di contenuti riservati, come ordini
+                      o richieste che ci invii in qualità di gestore del sito, questo sito utilizza la crittografia
+                      SSL o TLS. Puoi riconoscere una connessione crittografata dal fatto che la barra degli
+                      indirizzi del browser cambia da "http://" a "https://" e dal simbolo del lucchetto nella
+                      barra del browser.
                     </p>
                     <p className="mt-3">
-                      When SSL or TLS encryption is activated, the data you transmit to us cannot be read by
-                      third parties.
+                      Quando la crittografia SSL o TLS è attivata, i dati che ci trasmetti non possono essere
+                      letti da terzi.
                     </p>
                   </div>
 
                   <div>
-                    <h3 className="font-serif text-warm-800 text-xl mb-2">Objection to Promotional Emails</h3>
+                    <h3 className="font-serif text-warm-800 text-xl mb-2">Opposizione alle E-mail Promozionali</h3>
                     <p>
-                      The use of contact details published as part of our legal notice obligation for the
-                      purpose of sending unsolicited advertising and information materials is hereby expressly
-                      prohibited. The operators of this site reserve the right to take legal action in the
-                      event of unsolicited promotional information being sent, for example by spam emails.
+                      L'utilizzo dei dettagli di contatto pubblicati nell'ambito dell'obbligo di avviso legale
+                      per l'invio di pubblicità e materiali informativi non richiesti è espressamente vietato.
+                      I gestori di questo sito si riservano il diritto di intraprendere azioni legali in caso di
+                      invio non richiesto di informazioni promozionali, ad esempio tramite e-mail di spam.
                     </p>
                   </div>
                 </div>
               </div>
 
-              {/* Section 4 */}
+              {/* Sezione 4 */}
               <div>
-                <h2 className="font-serif text-warm-800 text-2xl mb-4">4. Data Collection on This Website</h2>
+                <h2 className="font-serif text-warm-800 text-2xl mb-4">4. Raccolta Dati su Questo Sito Web</h2>
 
                 <div className="space-y-6">
                   <div>
-                    <h3 className="font-serif text-warm-800 text-xl mb-2">Cookies</h3>
+                    <h3 className="font-serif text-warm-800 text-xl mb-2">Cookie</h3>
                     <p>
-                      Our website uses so-called "cookies". Cookies are small data packets that do no damage
-                      to your device. They are either stored temporarily for the duration of a session
-                      (session cookies) or permanently (persistent cookies) on your device. Session cookies
-                      are automatically deleted at the end of your visit. Persistent cookies remain stored on
-                      your device until you delete them yourself or until they are automatically deleted by
-                      your web browser.
+                      Il nostro sito web utilizza i cosiddetti "cookie". I cookie sono piccoli pacchetti di dati
+                      che non arrecano danni al tuo dispositivo. Vengono memorizzati temporaneamente per la durata
+                      di una sessione (cookie di sessione) o in modo permanente (cookie persistenti) sul tuo
+                      dispositivo. I cookie di sessione vengono eliminati automaticamente al termine della visita.
+                      I cookie persistenti rimangono memorizzati sul tuo dispositivo finché non li elimini tu
+                      stesso o finché non vengono eliminati automaticamente dal tuo browser web.
                     </p>
                     <p className="mt-3">
-                      Cookies can come from us (first-party cookies) or from third-party companies
-                      (third-party cookies). Third-party cookies enable the integration of certain services
-                      from third-party companies within websites (e.g. cookies for processing payment
-                      services).
+                      I cookie possono provenire da noi (cookie di prima parte) o da società terze (cookie di
+                      terze parti). I cookie di terze parti consentono l'integrazione di determinati servizi di
+                      società terze all'interno di siti web (ad es. cookie per l'elaborazione dei servizi di
+                      pagamento).
                     </p>
                     <p className="mt-3">
-                      Cookies have various functions. Many cookies are technically necessary, as certain
-                      website functions would not work without them. Other cookies can be used to analyze
-                      user behavior or for advertising purposes.
+                      I cookie hanno varie funzioni. Molti cookie sono tecnicamente necessari, poiché alcune
+                      funzioni del sito web non funzionerebbero senza di essi. Altri cookie possono essere
+                      utilizzati per analizzare il comportamento degli utenti o per scopi pubblicitari.
                     </p>
                     <p className="mt-3">
-                      Cookies that are required to carry out the electronic communication process, to provide
-                      certain functions you have requested, or to optimize the website (e.g. cookies for
-                      measuring website audiences) are stored on the basis of Art. 6 para. 1 lit. f GDPR,
-                      unless another legal basis is specified. The website operator has a legitimate interest
-                      in storing necessary cookies for the technically error-free and optimized provision of
-                      its services. Where consent to the storage of cookies and comparable recognition
-                      technologies has been requested, processing is carried out exclusively on the basis of
-                      this consent (Art. 6 para. 1 lit. a GDPR and § 25 para. 1 TTDSG); consent can be
-                      revoked at any time.
+                      I cookie necessari per l'esecuzione del processo di comunicazione elettronica, per la
+                      fornitura di determinate funzioni da te richieste o per l'ottimizzazione del sito web
+                      (ad es. cookie per la misurazione del pubblico del sito web) vengono memorizzati sulla
+                      base dell'art. 6 par. 1 lett. f GDPR, salvo che non sia specificata un'altra base giuridica.
+                      Il gestore del sito web ha un interesse legittimo alla memorizzazione dei cookie necessari
+                      per la fornitura tecnicamente priva di errori e ottimizzata dei suoi servizi. Laddove sia
+                      stato richiesto il consenso alla memorizzazione di cookie e tecnologie di riconoscimento
+                      comparabili, il trattamento viene effettuato esclusivamente sulla base di tale consenso
+                      (art. 6 par. 1 lett. a GDPR e art. 25 par. 1 TTDSG); il consenso può essere revocato in
+                      qualsiasi momento.
                     </p>
                     <p className="mt-3">
-                      You can configure your browser to inform you about the setting of cookies and to allow
-                      cookies only in individual cases, to exclude the acceptance of cookies for certain cases
-                      or in general, and to enable the automatic deletion of cookies when closing the browser.
-                      Disabling cookies may limit the functionality of this website.
+                      Puoi configurare il tuo browser in modo da essere informato sull'impostazione dei cookie
+                      e da consentire i cookie solo in singoli casi, da escludere l'accettazione dei cookie
+                      per determinati casi o in generale, e da abilitare l'eliminazione automatica dei cookie
+                      alla chiusura del browser. La disabilitazione dei cookie può limitare la funzionalità
+                      di questo sito web.
                     </p>
                     <p className="mt-3">
-                      You can find out which cookies and services are used on this website in this privacy
-                      policy.
+                      Puoi trovare informazioni su quali cookie e servizi vengono utilizzati su questo sito web
+                      nella presente informativa sulla privacy.
                     </p>
                   </div>
 
                   <div>
-                    <h3 className="font-serif text-warm-800 text-xl mb-2">Contact Form</h3>
+                    <h3 className="font-serif text-warm-800 text-xl mb-2">Modulo di Contatto</h3>
                     <p>
-                      If you send us inquiries via the contact form, your details from the inquiry form,
-                      including the contact details you provided there, will be stored with us for the purpose
-                      of processing the inquiry and in case of follow-up questions. We do not share this data
-                      without your consent.
+                      Se ci invii richieste tramite il modulo di contatto, i tuoi dati del modulo di richiesta,
+                      inclusi i dati di contatto da te forniti, verranno memorizzati presso di noi ai fini
+                      dell'elaborazione della richiesta e in caso di domande di follow-up. Non condividiamo
+                      questi dati senza il tuo consenso.
                     </p>
                     <p className="mt-3">
-                      The processing of this data is based on Art. 6 para. 1 lit. b GDPR if your inquiry is
-                      related to the performance of a contract or is necessary for carrying out pre-contractual
-                      measures. In all other cases, processing is based on our legitimate interest in the
-                      effective handling of inquiries directed to us (Art. 6 para. 1 lit. f GDPR) or on your
-                      consent (Art. 6 para. 1 lit. a GDPR) if this has been requested; consent can be revoked
-                      at any time.
+                      Il trattamento di questi dati si basa sull'art. 6 par. 1 lett. b GDPR se la tua richiesta
+                      è correlata all'esecuzione di un contratto o è necessaria per l'attuazione di misure
+                      precontrattuali. In tutti gli altri casi, il trattamento si basa sul nostro legittimo
+                      interesse alla gestione efficace delle richieste a noi indirizzate (art. 6 par. 1 lett.
+                      f GDPR) o sul tuo consenso (art. 6 par. 1 lett. a GDPR) se questo è stato richiesto;
+                      il consenso può essere revocato in qualsiasi momento.
                     </p>
                     <p className="mt-3">
-                      The data you enter in the contact form will remain with us until you ask us to delete it,
-                      revoke your consent to storage, or the purpose for data storage no longer applies (e.g.
-                      after your inquiry has been fully processed). Mandatory legal provisions — in particular
-                      retention periods — remain unaffected.
+                      I dati che hai inserito nel modulo di contatto rimarranno presso di noi fino a quando
+                      non ci chiederai di eliminarli, non revocherai il tuo consenso alla memorizzazione o
+                      la finalità della memorizzazione dei dati non sarà più applicabile (ad es. dopo che la
+                      tua richiesta è stata completamente elaborata). Le disposizioni di legge obbligatorie —
+                      in particolare i periodi di conservazione — rimangono impregiudicate.
                     </p>
                   </div>
 
                   <div>
-                    <h3 className="font-serif text-warm-800 text-xl mb-2">Inquiry by Email, Phone, or Fax</h3>
+                    <h3 className="font-serif text-warm-800 text-xl mb-2">Richiesta tramite E-mail, Telefono o Fax</h3>
                     <p>
-                      If you contact us by email, phone, or fax, your inquiry including all resulting personal
-                      data (name, inquiry) will be stored and processed by us for the purpose of handling your
-                      request. We do not share this data without your consent.
+                      Se ci contatti tramite e-mail, telefono o fax, la tua richiesta, inclusi tutti i dati
+                      personali risultanti (nome, richiesta), verrà memorizzata e trattata da noi ai fini
+                      dell'elaborazione della tua richiesta. Non condividiamo questi dati senza il tuo consenso.
                     </p>
                     <p className="mt-3">
-                      The processing of this data is based on Art. 6 para. 1 lit. b GDPR if your inquiry is
-                      related to the performance of a contract or is necessary for carrying out pre-contractual
-                      measures. In all other cases, processing is based on our legitimate interest in the
-                      effective handling of inquiries directed to us (Art. 6 para. 1 lit. f GDPR) or on your
-                      consent (Art. 6 para. 1 lit. a GDPR) if this has been requested; consent can be revoked
-                      at any time.
+                      Il trattamento di questi dati si basa sull'art. 6 par. 1 lett. b GDPR se la tua richiesta
+                      è correlata all'esecuzione di un contratto o è necessaria per l'attuazione di misure
+                      precontrattuali. In tutti gli altri casi, il trattamento si basa sul nostro legittimo
+                      interesse alla gestione efficace delle richieste a noi indirizzate (art. 6 par. 1 lett.
+                      f GDPR) o sul tuo consenso (art. 6 par. 1 lett. a GDPR) se questo è stato richiesto;
+                      il consenso può essere revocato in qualsiasi momento.
                     </p>
                     <p className="mt-3">
-                      Data sent to us via contact inquiries will remain with us until you ask us to delete it,
-                      revoke your consent to storage, or the purpose for data storage no longer applies (e.g.
-                      after your request has been fully processed). Mandatory legal provisions — in particular
-                      statutory retention periods — remain unaffected.
+                      I dati inviatici tramite richieste di contatto rimarranno presso di noi fino a quando
+                      non ci chiederai di eliminarli, non revocherai il tuo consenso alla memorizzazione o
+                      la finalità della memorizzazione dei dati non sarà più applicabile (ad es. dopo che la
+                      tua richiesta è stata completamente elaborata). Le disposizioni di legge obbligatorie —
+                      in particolare i periodi di conservazione legali — rimangono impregiudicate.
                     </p>
                   </div>
 
                   <div>
-                    <h3 className="font-serif text-warm-800 text-xl mb-2">Participation in Affiliate Partner Programs</h3>
+                    <h3 className="font-serif text-warm-800 text-xl mb-2">Partecipazione a Programmi di Affiliazione</h3>
                     <p>
-                      Within our online offering, we use industry-standard tracking measures on the basis of
-                      our legitimate interests (i.e. interest in the analysis, optimization, and economic
-                      operation of our online offering) pursuant to Art. 6 para. 1 lit. f GDPR, insofar as
-                      these are necessary for the operation of the affiliate system. The following information
-                      explains the technical background to users.
+                      Nell'ambito della nostra offerta online, utilizziamo misure di tracciamento standard del
+                      settore sulla base dei nostri interessi legittimi (ossia interesse nell'analisi,
+                      nell'ottimizzazione e nel funzionamento economico della nostra offerta online) ai sensi
+                      dell'art. 6 par. 1 lett. f GDPR, nella misura in cui queste siano necessarie per il
+                      funzionamento del sistema di affiliazione. Le seguenti informazioni spiegano il background
+                      tecnico agli utenti.
                     </p>
                     <p className="mt-3">
-                      The services offered by our contract partners can also be advertised and linked to on
-                      other websites (so-called affiliate links or after-buy systems, e.g. when links to third
-                      parties are offered after a contract has been concluded). The operators of the respective
-                      websites receive a commission when users follow the affiliate links and subsequently take
-                      up the offers.
+                      I servizi offerti dai nostri partner contrattuali possono essere pubblicizzati e collegati
+                      anche su altri siti web (i cosiddetti link di affiliazione o sistemi after-buy, ad es. quando
+                      vengono offerti link a terzi dopo la conclusione di un contratto). I gestori dei rispettivi
+                      siti web ricevono una commissione quando gli utenti seguono i link di affiliazione e
+                      successivamente usufruiscono delle offerte.
                     </p>
                     <p className="mt-3">
-                      In summary, it is necessary for our online offering that we can track whether users who
-                      are interested in affiliate links and/or the offers available from us subsequently take
-                      up those offers via the affiliate links or our online platform. For this purpose, the
-                      affiliate links and our offers are supplemented with certain values that can be part of
-                      the link or otherwise set, e.g. in a cookie. These values include in particular the
-                      source website (referrer), time, an online identifier of the operators of the website on
-                      which the affiliate link was located, an online identifier of the respective offer, an
-                      online identifier of the user, as well as tracking-specific values such as advertising
-                      material ID, partner ID, and categorizations.
+                      In sintesi, è necessario per la nostra offerta online che possiamo tracciare se gli utenti
+                      interessati ai link di affiliazione e/o alle offerte disponibili da noi usufruiscono
+                      successivamente di tali offerte tramite i link di affiliazione o la nostra piattaforma
+                      online. A tale scopo, i link di affiliazione e le nostre offerte vengono integrati con
+                      determinati valori che possono far parte del link o essere altrimenti impostati, ad es.
+                      in un cookie. Questi valori includono in particolare il sito web di origine (referrer),
+                      il tempo, un identificativo online degli operatori del sito web in cui si trovava il link
+                      di affiliazione, un identificativo online della rispettiva offerta, un identificativo
+                      online dell'utente, nonché valori specifici di tracciamento come l'ID del materiale
+                      pubblicitario, l'ID partner e le categorizzazioni.
                     </p>
                     <p className="mt-3">
-                      The online identifiers of users used by us are pseudonymous values. This means the online
-                      identifiers themselves do not contain personal data such as names or email addresses.
-                      They only help us to determine whether the same user who clicked on an affiliate link or
-                      was interested in an offer through our online platform subsequently took up the offer,
-                      e.g. concluded a contract with the provider. However, the online identifier is personal
-                      in the sense that the partner company and ourselves have the online identifier together
-                      with other user data. Only in this way can the partner company inform us whether that
-                      user took up the offer and we can, for example, pay out the bonus.
+                      Gli identificativi online degli utenti da noi utilizzati sono valori pseudonimi. Ciò
+                      significa che gli identificativi online stessi non contengono dati personali come nomi
+                      o indirizzi e-mail. Ci aiutano solo a determinare se lo stesso utente che ha cliccato
+                      su un link di affiliazione o era interessato a un'offerta tramite la nostra piattaforma
+                      online ha successivamente usufruito dell'offerta, ad es. ha concluso un contratto con
+                      il fornitore. Tuttavia, l'identificativo online è personale nel senso che la società
+                      partner e noi stessi disponiamo dell'identificativo online insieme ad altri dati
+                      dell'utente. Solo in questo modo la società partner può informarci se quell'utente
+                      ha usufruito dell'offerta e noi possiamo, ad esempio, pagare il bonus.
                     </p>
                   </div>
 
                   <div>
-                    <h3 className="font-serif text-warm-800 text-xl mb-2">Amazon Partner Program</h3>
+                    <h3 className="font-serif text-warm-800 text-xl mb-2">Programma Partner Amazon</h3>
                     <p>
-                      On the basis of our legitimate interests (i.e. interest in the economic operation of our
-                      online offering within the meaning of Art. 6 para. 1 lit. f GDPR), we participate in
-                      the Amazon EU partner program, which is designed to provide a medium for websites
-                      through which advertising revenue can be earned by placing advertisements and links to
-                      Amazon.de (so-called affiliate system). As an Amazon partner, we earn from qualifying
-                      purchases.
+                      Sulla base dei nostri interessi legittimi (ossia interesse nel funzionamento economico
+                      della nostra offerta online ai sensi dell'art. 6 par. 1 lett. f GDPR), partecipiamo al
+                      programma partner Amazon EU, concepito per fornire un mezzo per i siti web attraverso
+                      il quale è possibile guadagnare entrate pubblicitarie inserendo pubblicità e link ad
+                      Amazon.de (il cosiddetto sistema di affiliazione). In qualità di partner Amazon,
+                      guadagniamo dagli acquisti idonei.
                     </p>
                     <p className="mt-3">
-                      Amazon uses cookies to be able to trace the origin of orders. Among other things, Amazon
-                      can recognize that you clicked the partner link on this website and subsequently
-                      purchased a product on Amazon.
+                      Amazon utilizza i cookie per poter tracciare l'origine degli ordini. Tra l'altro, Amazon
+                      può riconoscere che hai cliccato il link partner su questo sito web e successivamente
+                      hai acquistato un prodotto su Amazon.
                     </p>
                     <p className="mt-3">
-                      For more information about Amazon's data use and opt-out options, please refer to
-                      Amazon's privacy policy:{' '}
+                      Per ulteriori informazioni sull'utilizzo dei dati da parte di Amazon e sulle opzioni di
+                      opt-out, ti invitiamo a consultare l'informativa sulla privacy di Amazon:{' '}
                       <a
                         href="https://www.amazon.de/gp/help/customer/display.html?nodeId=201909010"
                         target="_blank"
@@ -513,52 +528,52 @@ export default function PrivacyPolicyPage() {
                       .
                     </p>
                     <p className="mt-3 text-sm">
-                      Note: Amazon and the Amazon logo are trademarks of Amazon.com, Inc. or one of its
-                      affiliated companies.
+                      Nota: Amazon e il logo Amazon sono marchi di Amazon.com, Inc. o di una delle sue
+                      società affiliate.
                     </p>
                   </div>
 
                   <div>
-                    <h3 className="font-serif text-warm-800 text-xl mb-2">"Baby Sleep Check / Sleep Analysis"</h3>
+                    <h3 className="font-serif text-warm-800 text-xl mb-2">"Baby-Schlaf-Check / Analisi del Sonno"</h3>
 
-                    <p className="font-medium text-warm-700 mt-3 mb-1">1) Purpose and process of data processing</p>
-                    <p>When you use our <strong>Baby Sleep Check (Sleep Analysis)</strong>, we process your details in order to:</p>
+                    <p className="font-medium text-warm-700 mt-3 mb-1">1) Finalità e processo del trattamento dei dati</p>
+                    <p>Quando utilizzi il nostro <strong>Baby-Schlaf-Check (Analisi del Sonno)</strong>, trattiamo i tuoi dati per:</p>
                     <ul className="list-disc pl-6 mt-2 space-y-1">
-                      <li>send you an <strong>automated evaluation as guidance</strong> (results email), and</li>
-                      <li>send you <strong>further helpful emails</strong> about baby sleep afterwards (e.g. tailored tips based on your results).</li>
+                      <li>inviarti una <strong>valutazione automatizzata come guida</strong> (e-mail con i risultati), e</li>
+                      <li>inviarti <strong>ulteriori e-mail utili</strong> sul sonno del bambino successivamente (ad es. consigli personalizzati in base ai tuoi risultati).</li>
                     </ul>
                     <p className="mt-2">
-                      <strong>Important:</strong> The evaluation is a <strong>general guide</strong> and does not
-                      replace <strong>medical advice or diagnosis</strong>.
+                      <strong>Importante:</strong> La valutazione è una <strong>guida generale</strong> e non
+                      sostituisce <strong>il parere medico o una diagnosi</strong>.
                     </p>
 
-                    <p className="font-medium text-warm-700 mt-4 mb-1">2) What data we process</p>
-                    <p>Depending on what you enter, we process in particular:</p>
+                    <p className="font-medium text-warm-700 mt-4 mb-1">2) Quali dati trattiamo</p>
+                    <p>A seconda di ciò che inserisci, trattiamo in particolare:</p>
                     <ul className="list-disc pl-6 mt-2 space-y-1">
-                      <li>Email address (required)</li>
-                      <li>First name (if provided)</li>
-                      <li>Baby's name (if provided/optional)</li>
-                      <li>Information from the check (e.g. sleep times, naps, wake windows, time to fall asleep, night wakings, subjective rating)</li>
+                      <li>Indirizzo e-mail (obbligatorio)</li>
+                      <li>Nome (se fornito)</li>
+                      <li>Nome del bambino (se fornito/opzionale)</li>
+                      <li>Informazioni dal check (ad es. orari del sonno, pisolini, finestre di veglia, tempo per addormentarsi, risvegli notturni, valutazione soggettiva)</li>
                     </ul>
-                    <p className="mt-2">Additionally, we store (for the meaningful delivery of matching follow-ups) typical result fields such as:</p>
+                    <p className="mt-2">Memorizziamo inoltre (per la consegna significativa di follow-up corrispondenti) campi di risultato tipici come:</p>
                     <ul className="list-disc pl-6 mt-2 space-y-1">
-                      <li>Age in months (or age group)</li>
-                      <li>"Main issue"/focus area (key)</li>
-                      <li>Score/status per area</li>
+                      <li>Età in mesi (o fascia d'età)</li>
+                      <li>"Problema principale"/area di focus (chiave)</li>
+                      <li>Punteggio/stato per area</li>
                     </ul>
 
-                    <p className="font-medium text-warm-700 mt-4 mb-1">3) Legal basis</p>
+                    <p className="font-medium text-warm-700 mt-4 mb-1">3) Base giuridica</p>
                     <p>
-                      Processing is based on your <strong>consent</strong> (Art. 6 para. 1 lit. a GDPR). You
-                      can revoke your consent <strong>at any time</strong> (e.g. via the unsubscribe link in
-                      any email).
+                      Il trattamento si basa sul tuo <strong>consenso</strong> (art. 6 par. 1 lett. a GDPR). Puoi
+                      revocare il tuo consenso <strong>in qualsiasi momento</strong> (ad es. tramite il link di
+                      disiscrizione in qualsiasi e-mail).
                     </p>
 
-                    <p className="font-medium text-warm-700 mt-4 mb-1">4) Email dispatch via KlickTipp</p>
+                    <p className="font-medium text-warm-700 mt-4 mb-1">4) Invio di e-mail tramite KlickTipp</p>
                     <p>
-                      For sending and managing emails, we use <strong>KlickTipp</strong> as our service
-                      provider (email marketing/CRM). KlickTipp processes data on our behalf. KlickTipp states
-                      that data is processed <strong>exclusively within the EU</strong>.{' '}
+                      Per l'invio e la gestione delle e-mail, utilizziamo <strong>KlickTipp</strong> come nostro
+                      fornitore di servizi (email marketing/CRM). KlickTipp tratta i dati per nostro conto.
+                      KlickTipp dichiara che i dati vengono trattati <strong>esclusivamente nell'UE</strong>.{' '}
                       <a
                         href="https://www.klicktipp.com/de/marketing-suite/datenschutz-dsgvo/"
                         target="_blank"
@@ -569,16 +584,16 @@ export default function PrivacyPolicyPage() {
                       </a>
                     </p>
 
-                    <p className="font-medium text-warm-700 mt-4 mb-1">5) Automated evaluation using AI (OpenAI)</p>
+                    <p className="font-medium text-warm-700 mt-4 mb-1">5) Valutazione automatizzata tramite AI (OpenAI)</p>
                     <p>
-                      For the automated evaluation, we use an AI service from <strong>OpenAI</strong>. In doing
-                      so, the content you have entered (and, if applicable, intermediate result values) is
-                      transmitted to OpenAI for the purpose of generating the evaluation, and a text output is
-                      returned.
+                      Per la valutazione automatizzata, utilizziamo un servizio AI di <strong>OpenAI</strong>.
+                      In questo modo, i contenuti da te inseriti (e, se del caso, i valori dei risultati
+                      intermedi) vengono trasmessi a OpenAI ai fini della generazione della valutazione,
+                      e viene restituito un output testuale.
                     </p>
                     <p className="mt-2">
-                      OpenAI processes this data for us as a <strong>data processor</strong> under a Data
-                      Processing Addendum.{' '}
+                      OpenAI tratta questi dati per noi come <strong>responsabile del trattamento</strong>
+                      nell'ambito di un Addendum sul Trattamento dei Dati.{' '}
                       <a
                         href="https://openai.com/policies/data-processing-addendum/"
                         target="_blank"
@@ -589,31 +604,32 @@ export default function PrivacyPolicyPage() {
                       </a>
                     </p>
                     <p className="mt-2">
-                      OpenAI also states that <strong>API data is not used for training</strong> their models
-                      by default, and that content may be stored for up to 30 days for abuse monitoring
-                      purposes (unless otherwise agreed).
+                      OpenAI dichiara inoltre che i <strong>dati API non vengono utilizzati per l'addestramento</strong>
+                      dei propri modelli per impostazione predefinita, e che i contenuti possono essere
+                      memorizzati per un massimo di 30 giorni a fini di monitoraggio degli abusi (salvo
+                      diverso accordo).
                     </p>
                     <p className="mt-2">
-                      <strong>Note on sensitive data:</strong> Please do not enter any medical diagnoses,
-                      illnesses, or other health data in free text fields. The evaluation is not designed for
-                      this purpose.
+                      <strong>Nota sui dati sensibili:</strong> Ti invitiamo a non inserire diagnosi mediche,
+                      malattie o altri dati sanitari nei campi di testo libero. La valutazione non è progettata
+                      per questo scopo.
                     </p>
 
-                    <p className="font-medium text-warm-700 mt-4 mb-1">6) Recipients / third-country transfers</p>
+                    <p className="font-medium text-warm-700 mt-4 mb-1">6) Destinatari / trasferimenti verso paesi terzi</p>
                     <ul className="list-disc pl-6 mt-2 space-y-1">
                       <li>
-                        <strong>KlickTipp</strong> (email dispatch, contact management) —{' '}
+                        <strong>KlickTipp</strong> (invio e-mail, gestione contatti) —{' '}
                         <a
                           href="https://www.klicktipp.com/de/marketing-suite/datenschutz-dsgvo/"
                           target="_blank"
                           rel="noopener noreferrer"
                           className="text-blush-500 hover:text-blush-600 transition-colors"
                         >
-                          Privacy Policy
+                          Informativa sulla Privacy
                         </a>
                       </li>
                       <li>
-                        <strong>OpenAI</strong> (AI evaluation) —{' '}
+                        <strong>OpenAI</strong> (valutazione AI) —{' '}
                         <a
                           href="https://openai.com/policies/data-processing-addendum/"
                           target="_blank"
@@ -625,194 +641,201 @@ export default function PrivacyPolicyPage() {
                       </li>
                     </ul>
                     <p className="mt-2">
-                      Where processing or transfers outside the EEA are required for OpenAI, this is carried
-                      out on the basis of appropriate safeguards (e.g. Standard Contractual Clauses or an
-                      adequacy decision) according to the DPA.
+                      Laddove il trattamento o i trasferimenti al di fuori del SEE siano necessari per OpenAI,
+                      ciò viene effettuato sulla base di garanzie adeguate (ad es. Clausole Contrattuali
+                      Standard o una decisione di adeguatezza) ai sensi del DPA.
                     </p>
 
-                    <p className="font-medium text-warm-700 mt-4 mb-1">7) Storage duration</p>
+                    <p className="font-medium text-warm-700 mt-4 mb-1">7) Durata della conservazione</p>
                     <ul className="list-disc pl-6 mt-2 space-y-1">
-                      <li>We store your data for as long as necessary for the purposes stated above, or until you revoke your consent.</li>
-                      <li>Workflow/system logs (e.g. in n8n) are regularly deleted after 30 days.</li>
-                      <li>For OpenAI, the retention periods mentioned above apply within the scope of the service (typically up to 30 days for API content, unless otherwise agreed).</li>
+                      <li>Conserviamo i tuoi dati per il tempo necessario alle finalità sopra indicate, o fino a quando non revochi il tuo consenso.</li>
+                      <li>I log di workflow/sistema (ad es. in n8n) vengono eliminati regolarmente dopo 30 giorni.</li>
+                      <li>Per OpenAI si applicano i periodi di conservazione sopra menzionati nell'ambito del servizio (in genere fino a 30 giorni per i contenuti API, salvo diverso accordo).</li>
                     </ul>
 
-                    <p className="font-medium text-warm-700 mt-4 mb-1">8) Your rights</p>
+                    <p className="font-medium text-warm-700 mt-4 mb-1">8) I tuoi diritti</p>
                     <p>
-                      You have the right at any time to access, rectification, deletion, restriction of
-                      processing, data portability, and objection — as well as the right to lodge a complaint
-                      with a supervisory authority.
+                      Hai il diritto in qualsiasi momento di accesso, rettifica, cancellazione, limitazione
+                      del trattamento, portabilità dei dati e opposizione — nonché il diritto di presentare
+                      reclamo a un'autorità di controllo.
                     </p>
                   </div>
                 </div>
               </div>
 
-              {/* Section 5 */}
+              {/* Sezione 5 */}
               <div>
                 <h2 className="font-serif text-warm-800 text-2xl mb-4">5. Newsletter</h2>
 
                 <div className="space-y-6">
                   <div>
-                    <h3 className="font-serif text-warm-800 text-xl mb-2">Newsletter Data</h3>
+                    <h3 className="font-serif text-warm-800 text-xl mb-2">Dati della Newsletter</h3>
                     <p>
-                      If you would like to receive the newsletter offered on this website, we require an email
-                      address from you as well as information that allows us to verify that you are the owner
-                      of the provided email address and that you consent to receiving the newsletter. Further
-                      data is not collected or is collected only on a voluntary basis. We use this data
-                      exclusively for sending the requested information and do not pass it on to third parties.
+                      Se desideri ricevere la newsletter offerta su questo sito web, abbiamo bisogno di un
+                      indirizzo e-mail da parte tua, nonché di informazioni che ci consentano di verificare
+                      che tu sia il proprietario dell'indirizzo e-mail fornito e che tu acconsenta a ricevere
+                      la newsletter. Non vengono raccolti altri dati o vengono raccolti solo su base volontaria.
+                      Utilizziamo questi dati esclusivamente per l'invio delle informazioni richieste e non li
+                      trasferiamo a terzi.
                     </p>
                     <p className="mt-3">
-                      The processing of the data entered into the newsletter registration form is carried out
-                      exclusively on the basis of your consent (Art. 6 para. 1 lit. a GDPR). You can revoke
-                      your consent to the storage of data, the email address, and their use for sending the
-                      newsletter at any time, for example via the "Unsubscribe" link in the newsletter. The
-                      legality of data processing operations that have already taken place remains unaffected
-                      by the revocation.
+                      Il trattamento dei dati inseriti nel modulo di iscrizione alla newsletter viene effettuato
+                      esclusivamente sulla base del tuo consenso (art. 6 par. 1 lett. a GDPR). Puoi revocare
+                      il tuo consenso alla memorizzazione dei dati, dell'indirizzo e-mail e del loro utilizzo
+                      per l'invio della newsletter in qualsiasi momento, ad esempio tramite il link
+                      "Disiscrivi" nella newsletter. La liceità delle operazioni di trattamento dei dati già
+                      avvenute rimane impregiudicata dalla revoca.
                     </p>
                     <p className="mt-3">
-                      The data stored with us for the purpose of receiving the newsletter will be stored by
-                      us or the newsletter service provider until you unsubscribe from the newsletter, and
-                      deleted from the newsletter distribution list after you unsubscribe or once the purpose
-                      ceases to apply. We reserve the right to delete or block email addresses from our
-                      newsletter distribution list at our own discretion within the scope of our legitimate
-                      interest pursuant to Art. 6 para. 1 lit. f GDPR.
+                      I dati memorizzati presso di noi ai fini della ricezione della newsletter verranno
+                      conservati da noi o dal fornitore del servizio newsletter fino a quando non ti disiscriverai
+                      dalla newsletter, ed eliminati dall'elenco di distribuzione della newsletter dopo la
+                      disiscrizione o una volta che la finalità cessa di applicarsi. Ci riserviamo il diritto
+                      di eliminare o bloccare indirizzi e-mail dal nostro elenco di distribuzione della
+                      newsletter a nostra discrezione nell'ambito del nostro legittimo interesse ai sensi
+                      dell'art. 6 par. 1 lett. f GDPR.
                     </p>
                     <p className="mt-3">
-                      Data stored with us for other purposes remains unaffected.
+                      I dati memorizzati presso di noi per altre finalità rimangono impregiudicati.
                     </p>
                     <p className="mt-3">
-                      After you unsubscribe from the newsletter distribution list, your email address may be
-                      stored by us or the newsletter service provider in a suppression list if this is
-                      necessary to prevent future mailings. The data from the suppression list is used solely
-                      for this purpose and is not merged with other data. This serves both your interest and
-                      our interest in complying with legal requirements when sending newsletters (legitimate
-                      interest within the meaning of Art. 6 para. 1 lit. f GDPR). Storage in the suppression
-                      list is not limited in time.{' '}
+                      Dopo la tua disiscrizione dall'elenco di distribuzione della newsletter, il tuo indirizzo
+                      e-mail può essere memorizzato da noi o dal fornitore del servizio newsletter in una lista
+                      di soppressione se ciò è necessario per prevenire futuri invii. I dati della lista di
+                      soppressione vengono utilizzati esclusivamente per questo scopo e non vengono uniti ad
+                      altri dati. Ciò serve sia al tuo interesse che al nostro interesse nel rispettare i
+                      requisiti legali durante l'invio di newsletter (interesse legittimo ai sensi dell'art.
+                      6 par. 1 lett. f GDPR). La memorizzazione nella lista di soppressione non è limitata
+                      nel tempo.{' '}
                       <strong>
-                        You may object to the storage if your interests outweigh our legitimate interest.
+                        Puoi opporti alla memorizzazione se i tuoi interessi prevalgono sul nostro legittimo interesse.
                       </strong>
                     </p>
                   </div>
 
                   <div>
-                    <h3 className="font-serif text-warm-800 text-xl mb-2">How We Use KlickTipp</h3>
+                    <h3 className="font-serif text-warm-800 text-xl mb-2">Come Utilizziamo KlickTipp</h3>
                     <p>
-                      (1) For online communication with you, we use the services of KLICK-TIPP LIMITED,
-                      15 Cambridge Court, 210 Shepherd's Bush Road, London W6 7NJ, United Kingdom.
-                      The representative of KLICK-TIPP LIMITED within the meaning of Article 27 GDPR is
-                      Waterton Knowledge Center WKC UG, Friedrichstr. 53a, 15537 Erkner, represented by
-                      Ulf Castelle. We obtain these services through a principal contract with Digistore24 GmbH,
-                      St.-Godehard-Straße 32, 31139 Hildesheim. Digistore24 is a reseller that procures
-                      products or services such as KlickTipp and sells them to buyers without significant
-                      further processing. We have additionally concluded a data processing agreement within
-                      the meaning of Article 28 GDPR directly with KlickTipp. This ensures that we maintain
-                      full control over the personal data processed there and that KlickTipp implements our
-                      instructions accordingly.
+                      (1) Per la comunicazione online con te, utilizziamo i servizi di KLICK-TIPP LIMITED,
+                      15 Cambridge Court, 210 Shepherd's Bush Road, London W6 7NJ, Regno Unito.
+                      Il rappresentante di KLICK-TIPP LIMITED ai sensi dell'articolo 27 GDPR è
+                      Waterton Knowledge Center WKC UG, Friedrichstr. 53a, 15537 Erkner, rappresentata da
+                      Ulf Castelle. Otteniamo questi servizi tramite un contratto principale con Digistore24 GmbH,
+                      St.-Godehard-Straße 32, 31139 Hildesheim. Digistore24 è un rivenditore che acquista
+                      prodotti o servizi come KlickTipp e li vende agli acquirenti senza ulteriore elaborazione
+                      significativa. Abbiamo inoltre concluso direttamente con KlickTipp un accordo sul
+                      trattamento dei dati ai sensi dell'articolo 28 GDPR. Ciò garantisce che manteniamo il
+                      pieno controllo sui dati personali lì trattati e che KlickTipp attua le nostre istruzioni
+                      di conseguenza.
                     </p>
                     <p className="mt-3">
-                      (2) We store your contact details at KlickTipp and may process the data that we process
-                      via the online marketing tools described in more detail in this privacy policy. These
-                      providers are fully integrated with KlickTipp via a secure interface. It is therefore
-                      possible that KlickTipp may become aware of this data — however, as mentioned above,
-                      KlickTipp has no right of its own use regarding this data and is fully subject to our
-                      instructions.
+                      (2) Memorizziamo i tuoi dati di contatto presso KlickTipp e possiamo trattare i dati
+                      che elaboriamo tramite gli strumenti di marketing online descritti più dettagliatamente
+                      nella presente informativa sulla privacy. Questi fornitori sono completamente integrati
+                      con KlickTipp tramite un'interfaccia sicura. È quindi possibile che KlickTipp venga a
+                      conoscenza di questi dati — tuttavia, come già menzionato, KlickTipp non ha alcun diritto
+                      di utilizzo proprio riguardo a questi dati ed è pienamente soggetto alle nostre istruzioni.
                     </p>
                     <p className="mt-3">
-                      (3) Furthermore, at KlickTipp we have the ability to associate your personal data with
-                      so-called tags. KlickTipp distinguishes two types of tags: SmartTags — when a contact
-                      registers via a registration form, they automatically receive a tag with the name of the
-                      relevant registration form. KlickTipp also automatically sets the tags "Email received",
-                      "Email opened", "Email clicked", and "Email viewed in browser". Manual tags — in
-                      addition to SmartTags, manual tags can be created to label contacts with, for example,
-                      the tag "Customer" or more specifically "Product B purchased".
+                      (3) Inoltre, presso KlickTipp abbiamo la possibilità di associare i tuoi dati personali
+                      ai cosiddetti tag. KlickTipp distingue due tipi di tag: SmartTag — quando un contatto
+                      si registra tramite un modulo di registrazione, riceve automaticamente un tag con il nome
+                      del relativo modulo di registrazione. KlickTipp imposta automaticamente anche i tag
+                      "E-mail ricevuta", "E-mail aperta", "E-mail cliccata" e "E-mail visualizzata nel browser".
+                      Tag manuali — oltre agli SmartTag, è possibile creare tag manuali per etichettare i
+                      contatti con, ad esempio, il tag "Cliente" o più specificamente "Prodotto B acquistato".
                     </p>
                     <p className="mt-3">
-                      (4) Details about these and other options we use at KlickTipp can be found in the{' '}
+                      (4) Dettagli su queste e altre opzioni che utilizziamo presso KlickTipp possono essere
+                      trovati nel{' '}
                       <a
                         href="https://www.klicktipp.com/handbuch"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-blush-500 hover:text-blush-600 transition-colors"
                       >
-                        KlickTipp Manual
+                        Manuale KlickTipp
                       </a>
                       .
                     </p>
                     <p className="mt-3">
-                      (5) KlickTipp's privacy policy can be found{' '}
+                      (5) L'informativa sulla privacy di KlickTipp può essere trovata{' '}
                       <a
                         href="https://www.klicktipp.com/datenschutzerklarung/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-blush-500 hover:text-blush-600 transition-colors"
                       >
-                        here
+                        qui
                       </a>
                       .
                     </p>
                     <p className="mt-3">
-                      (6) KlickTipp's anti-spam policy can be found{' '}
+                      (6) La politica anti-spam di KlickTipp può essere trovata{' '}
                       <a
                         href="https://www.klicktipp.com/anti-spam-policy/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-blush-500 hover:text-blush-600 transition-colors"
                       >
-                        here
+                        qui
                       </a>
                       .
                     </p>
                     <p className="mt-3">
-                      The following information provides details about the content of our newsletter, as well
-                      as the registration, dispatch, and statistical evaluation procedures and your right to
-                      object. By subscribing to our newsletter, you consent to receiving it and to the
-                      procedures described.
+                      Le seguenti informazioni forniscono dettagli sul contenuto della nostra newsletter,
+                      nonché sulle procedure di registrazione, invio e valutazione statistica e sul tuo
+                      diritto di opposizione. Iscrivendoti alla nostra newsletter, acconsenti a riceverla
+                      e alle procedure descritte.
                     </p>
                     <p className="mt-3">
-                      Content of the newsletter: We send newsletters, emails, and other electronic
-                      notifications containing promotional information (hereinafter "newsletter") only with
-                      the consent of the recipients or a legal authorization. Insofar as the content of the
-                      newsletter is specifically described in the context of a registration, it is decisive
-                      for the users' consent. Otherwise, our newsletters contain information about our
-                      services.
+                      Contenuto della newsletter: Inviamo newsletter, e-mail e altre notifiche elettroniche
+                      contenenti informazioni promozionali (di seguito "newsletter") solo con il consenso
+                      dei destinatari o un'autorizzazione legale. Nella misura in cui il contenuto della
+                      newsletter viene specificamente descritto nel contesto di una registrazione, esso è
+                      determinante per il consenso degli utenti. In caso contrario, le nostre newsletter
+                      contengono informazioni sui nostri servizi.
                     </p>
                     <p className="mt-3">
-                      Double opt-in and logging: Registration for our newsletter takes place using a so-called
-                      double opt-in procedure. This means that after registering you will receive an email
-                      asking you to confirm your registration. This confirmation is necessary to ensure that
-                      no one can register with someone else's email address. Newsletter registrations are
-                      logged in order to be able to demonstrate the registration process in accordance with
-                      legal requirements. This includes storing the time of registration and confirmation, as
-                      well as the IP address. Changes to your data stored with the dispatch service provider
-                      are also logged.
+                      Double opt-in e registrazione: La registrazione alla nostra newsletter avviene tramite
+                      una procedura di double opt-in. Ciò significa che dopo la registrazione riceverai
+                      un'e-mail che ti chiede di confermare la tua registrazione. Questa conferma è necessaria
+                      per garantire che nessuno possa registrarsi con l'indirizzo e-mail di qualcun altro.
+                      Le registrazioni alla newsletter vengono registrate al fine di poter dimostrare il
+                      processo di registrazione in conformità con i requisiti legali. Ciò include la
+                      memorizzazione dell'ora di registrazione e conferma, nonché dell'indirizzo IP. Anche
+                      le modifiche ai tuoi dati memorizzati presso il fornitore del servizio di invio vengono
+                      registrate.
                     </p>
                     <p className="mt-3">
-                      Registration data: To register for the newsletter, it is sufficient to provide your
-                      email address. Optionally, we ask you to provide a name for the purpose of a personal
-                      salutation in the newsletter.
+                      Dati di registrazione: Per iscriversi alla newsletter, è sufficiente fornire il tuo
+                      indirizzo e-mail. Facoltativamente, ti chiediamo di fornire un nome ai fini di un
+                      saluto personale nella newsletter.
                     </p>
                     <p className="mt-3">
-                      The sending of the newsletter and the associated performance measurement are carried out
-                      on the basis of consent from recipients pursuant to Art. 6 para. 1 lit. a, Art. 7 GDPR
-                      in conjunction with § 7 para. 2 No. 3 UWG, or, where consent is not required, on the
-                      basis of our legitimate interests in direct marketing pursuant to Art. 6 para. 1 lit. f
-                      GDPR in conjunction with § 7 para. 3 UWG.
+                      L'invio della newsletter e la relativa misurazione delle prestazioni vengono effettuati
+                      sulla base del consenso dei destinatari ai sensi dell'art. 6 par. 1 lett. a, art. 7 GDPR
+                      in combinato disposto con l'art. 7 par. 2 n. 3 UWG, oppure, ove il consenso non sia
+                      richiesto, sulla base del nostro legittimo interesse nel marketing diretto ai sensi
+                      dell'art. 6 par. 1 lett. f GDPR in combinato disposto con l'art. 7 par. 3 UWG.
                     </p>
                     <p className="mt-3">
-                      The logging of the registration process is carried out on the basis of our legitimate
-                      interests pursuant to Art. 6 para. 1 lit. f GDPR. Our interest is directed at the use
-                      of a user-friendly and secure newsletter system that serves both our business interests
-                      and the expectations of users, and also allows us to demonstrate consent.
+                      La registrazione del processo di iscrizione viene effettuata sulla base dei nostri
+                      interessi legittimi ai sensi dell'art. 6 par. 1 lett. f GDPR. Il nostro interesse è
+                      rivolto all'utilizzo di un sistema di newsletter intuitivo e sicuro che serva sia
+                      ai nostri interessi aziendali che alle aspettative degli utenti, e che ci consenta
+                      anche di dimostrare il consenso.
                     </p>
                     <p className="mt-3">
-                      Cancellation/revocation — You can cancel receipt of our newsletter at any time, i.e.
-                      revoke your consent. A link to cancel the newsletter can be found at the end of each
-                      newsletter. We may store email addresses that have been unsubscribed for up to three
-                      years on the basis of our legitimate interests before deleting them, in order to be able
-                      to demonstrate consent that was previously given. The processing of this data will be
-                      limited to the purpose of a possible defense against claims. An individual request for
-                      deletion is possible at any time, provided that the prior existence of consent is
-                      simultaneously confirmed.
+                      Cancellazione/revoca — Puoi annullare la ricezione della nostra newsletter in qualsiasi
+                      momento, ovvero revocare il tuo consenso. Un link per annullare l'iscrizione alla
+                      newsletter si trova alla fine di ogni newsletter. Potremmo conservare gli indirizzi
+                      e-mail che hanno annullato l'iscrizione per un massimo di tre anni sulla base dei
+                      nostri interessi legittimi prima di eliminarli, al fine di poter dimostrare il consenso
+                      precedentemente dato. Il trattamento di questi dati sarà limitato allo scopo di una
+                      possibile difesa contro eventuali rivendicazioni. Una richiesta individuale di
+                      cancellazione è possibile in qualsiasi momento, a condizione che sia confermata
+                      contemporaneamente la precedente esistenza del consenso.
                     </p>
                   </div>
                 </div>
