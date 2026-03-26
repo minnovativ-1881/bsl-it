@@ -10,8 +10,8 @@ import { useOptIn } from '@/context/OptInContext'
 
 const BADGE = 'GENITORI NEL PRIMO ANNO CON IL BAMBINO'
 const FOOTER = 'SONDAGGIO · 1.100 PARTECIPANTI · FEB 2025 · BABYSCHLUMMERLAND.DE'
-const BRAND_BLUE = '#3E85B0'   // sky-500
-const BRAND_BLUE_BG = '#2a6990' // slightly darker for dark-card backgrounds
+const BRAND_BLUE = '#71B2D7'    // homepage brand blue
+const BRAND_BLUE_BG = '#3E85B0' // darker for dark-card backgrounds
 
 function ChartCard({ children, dark = false }: { children: React.ReactNode; dark?: boolean }) {
   return (
@@ -76,7 +76,7 @@ function BarChart({
                 className="absolute inset-y-0 left-0 rounded-full transition-all"
                 style={{
                   width: `${(item.value / max) * 100}%`,
-                  backgroundColor: item.highlight ? '#C98B85' : dark ? 'rgba(255,255,255,0.75)' : '#4a4a7a',
+                  backgroundColor: item.highlight ? '#C98B85' : dark ? 'rgba(255,255,255,0.75)' : BRAND_BLUE,
                 }}
               />
             </div>
@@ -106,7 +106,7 @@ function BarChart({
   )
 }
 
-// ─── Chart 1: Genitori in Crisi del Sonno (SVG area, square) ─────────────────
+// ─── Chart 1: Genitori in Crisi del Sonno (SVG area, full width) ──────────────
 
 function SleepCrisisChart() {
   return (
@@ -117,30 +117,32 @@ function SleepCrisisChart() {
       <p className="text-warm-500 text-sm text-center mb-6 max-w-sm mx-auto">
         Ecco come diminuisce drasticamente la durata del sonno per i genitori nel primo anno.
       </p>
-      {/* Square container */}
-      <div className="relative mx-auto aspect-square max-w-xs">
-        <svg viewBox="0 0 300 300" className="w-full h-full" preserveAspectRatio="xMidYMid meet">
-          {/* Before birth – large triangle (top half) */}
-          <polygon points="0,300 300,0 300,300" fill="#F4C5BE" opacity="0.9" />
-          {/* First year – smaller triangle */}
-          <polygon points="0,300 300,100 300,300" fill={BRAND_BLUE} opacity="0.85" />
+      {/* Full-width wider SVG */}
+      <div className="relative w-full" style={{ aspectRatio: '2 / 1' }}>
+        <svg viewBox="0 0 500 250" className="w-full h-full" preserveAspectRatio="xMidYMid meet">
+          {/* Before birth – large blush triangle */}
+          <polygon points="0,250 500,0 500,250" fill="#F4C5BE" opacity="0.9" />
+          {/* First year – smaller blue triangle */}
+          <polygon points="0,250 500,95 500,250" fill={BRAND_BLUE_BG} opacity="0.9" />
           {/* Labels */}
-          <text x="230" y="30" textAnchor="middle" fontSize="11" fontWeight="600" fill="#5C4440">Prima della Nascita</text>
-          <text x="230" y="120" textAnchor="middle" fontSize="10" fontWeight="600" fill="white">Sonno nel Primo</text>
-          <text x="230" y="133" textAnchor="middle" fontSize="10" fontWeight="600" fill="white">Anno di Genitorialità</text>
-          {/* Axes */}
-          <text x="8" y="155" fontSize="9" fill="#9A6E69" transform="rotate(-90,8,155)">Ore di Sonno per Notte</text>
-          <text x="280" y="295" fontSize="9" fill="#9A6E69">1 Anno</text>
+          <text x="340" y="38" textAnchor="middle" fontSize="13" fontWeight="700" fill="#5C4440">Prima della Nascita</text>
+          <text x="370" y="148" textAnchor="middle" fontSize="12" fontWeight="700" fill="white">Sonno nel Primo</text>
+          <text x="370" y="164" textAnchor="middle" fontSize="12" fontWeight="700" fill="white">Anno di Genitorialità</text>
+          {/* Y axis label */}
+          <text x="12" y="135" fontSize="9" fill="#9A6E69" transform="rotate(-90,12,135)">Ore di Sonno per Notte</text>
+          {/* X axis label */}
+          <text x="460" y="244" fontSize="9" fill="#9A6E69">1 Anno</text>
         </svg>
       </div>
     </ChartCard>
   )
 }
 
-// ─── Chart 2: 109 Notti Senza Sonno (moon grid, square, brand blue) ───────────
+// ─── Chart 2: 109 Notti Senza Sonno (moon grid, full width, two-color) ────────
 
 function SleeplessNightsChart() {
-  const nights = 109
+  const total = 365
+  const sleepless = 109
   return (
     <ChartCard dark>
       <h3 className="font-sans font-black text-white text-2xl sm:text-3xl text-center mb-2">
@@ -150,19 +152,26 @@ function SleeplessNightsChart() {
         Nel primo anno, i genitori perdono in media <strong className="text-white">912 ore di sonno</strong> —
         l&apos;equivalente di <strong className="text-white">109 notti intere</strong> senza riposare.
       </p>
-      {/* Square grid of moon icons */}
-      <div className="mx-auto aspect-square max-w-xs flex items-center justify-center">
-        <div className="flex flex-wrap gap-2 justify-center">
-          {Array.from({ length: nights }).map((_, i) => (
-            <MoonIcon key={i} size={16} color="white" />
+      {/* Full-width grid: 109 bright + 256 dim = 365 total */}
+      <div className="w-full">
+        <div className="flex flex-wrap gap-1.5 justify-center">
+          {Array.from({ length: total }).map((_, i) => (
+            <MoonIcon
+              key={i}
+              size={16}
+              color={i < sleepless ? 'white' : 'rgba(255,255,255,0.22)'}
+            />
           ))}
         </div>
+        <p className="text-center text-sky-200/70 text-[10px] font-semibold tracking-[0.15em] uppercase mt-5">
+          365 Notti in un Anno
+        </p>
       </div>
     </ChartCard>
   )
 }
 
-// ─── Chart 3: Non Solo Breve — Anche Frammentato (dot grid, brand blue) ───────
+// ─── Chart 3: Non Solo Breve — Anche Frammentato (dot grid, full width) ───────
 
 function FragmentedSleepChart() {
   const interruptions = 1126
@@ -175,7 +184,7 @@ function FragmentedSleepChart() {
         Nel primo anno, i genitori subiscono oltre{' '}
         <strong className="text-white">1.126 interruzioni notturne</strong>!
       </p>
-      <div className="mx-auto aspect-square max-w-xs flex items-center justify-center">
+      <div className="w-full flex items-center justify-center">
         <div className="flex flex-wrap gap-[3px] justify-center">
           {Array.from({ length: interruptions }).map((_, i) => (
             <span
@@ -190,18 +199,18 @@ function FragmentedSleepChart() {
   )
 }
 
-// ─── Chart 4: Confronto del Sonno (horizontal bar chart, corrected values) ────
+// ─── Chart 4: Confronto del Sonno (corrected values) ─────────────────────────
 
 function SleepComparisonChart() {
   const items: BarItem[] = [
     { label: 'Bambini piccoli (1–3 anni)', value: 12 },
     { label: 'Adolescenti (14–17 anni)', value: 9 },
-    { label: 'Atleti professionisti in allenamento', value: 8.5 },
-    { label: 'Adulti medi', value: 8 },
-    { label: 'Medici di guardia notturna', value: 7 },
-    { label: 'Astronauti sulla ISS', value: 6.5 },
+    { label: 'Atleti professionisti in allenamento', value: 9 },
+    { label: 'Adulti medi', value: 7 },
+    { label: 'Medici di guardia notturna', value: 6.5 },
     { label: 'Lavoratori a turni', value: 6.5 },
-    { label: 'Soldati in servizio attivo', value: 6 },
+    { label: 'Astronauti sulla ISS', value: 6 },
+    { label: 'Soldati in servizio attivo', value: 5 },
     { label: 'Genitori nel primo anno', value: 5.5, highlight: true },
   ]
   return (
@@ -217,12 +226,12 @@ function SleepComparisonChart() {
   )
 }
 
-// ─── Chart 5: La Vita Quotidiana (2-bar chart, corrected values) ──────────────
+// ─── Chart 5: La Vita Quotidiana (corrected values) ───────────────────────────
 
 function DailyLifeChart() {
   const items: BarItem[] = [
-    { label: 'Cullare il bambino per farlo addormentare', value: 10.9 },
-    { label: 'Svegli nel letto, in attesa del sonno', value: 12.2 },
+    { label: 'Cullare il bambino per farlo addormentare', value: 11 },
+    { label: 'Svegli nel letto, in attesa del sonno', value: 12 },
   ]
   return (
     <ChartCard>
