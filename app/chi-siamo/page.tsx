@@ -75,7 +75,7 @@ const teamMembers = [
     badgeColor: 'bg-sky-100 text-sky-600 border-sky-200',
   },
   {
-    name: 'Julia Weiland',
+    name: 'Julia',
     role: 'Assistenza Clienti & Consulenza sul Sonno',
     badgeTitle: 'Assistenza Clienti',
     image: '/images/julia-weiland.jpg',
