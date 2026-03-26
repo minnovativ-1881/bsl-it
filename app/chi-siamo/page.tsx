@@ -39,7 +39,7 @@ const methods = [
 
 const teamMembers = [
   {
-    name: 'Sarah Mann',
+    name: 'Sarah',
     role: 'Fondatrice ed Esperta del Sonno Infantile',
     badgeTitle: 'Fondatrice ed Esperta del Sonno',
     image: '/images/sarahmann.webp',
@@ -55,7 +55,7 @@ const teamMembers = [
     ringColor2: 'border-blush-300/30',
   },
   {
-    name: 'Timon Mann',
+    name: 'Timon',
     role: 'Co-fondatore, Tecnologia & Organizzazione',
     badgeTitle: 'Co-Fondatore',
     image: '/images/timon.webp',
@@ -264,7 +264,7 @@ export default function AboutPage() {
                   </div>
 
                   {/* Certificate for Sarah */}
-                  {member.name === 'Sarah Mann' && (
+                  {member.name === 'Sarah' && (
                     <div className="mt-8 flex items-center gap-3">
                       <div className="rounded-xl overflow-hidden flex-shrink-0">
                         <Image
