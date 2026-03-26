@@ -7,10 +7,10 @@ import { useOptIn } from '@/context/OptInContext'
 import Image from 'next/image'
 
 const credentials = [
-  { icon: Award, text: 'Certified Gentle Sleep Consultant — Institute of Sensitive Sleep Consulting' },
-  { icon: BookOpen, text: 'Master of Education, author of multiple baby sleep e-books' },
-  { icon: Users, text: 'Over 50,000 online course participants' },
-  { icon: Heart, text: 'Mom of 7 children — I know exactly what you\'re going through' },
+  { icon: Award, text: 'Consulente certificata del sonno infantile — Institute of Sensitive Sleep Consulting, Australia' },
+  { icon: BookOpen, text: 'Master of Education, autrice di diversi e-book sul sonno del bambino' },
+  { icon: Users, text: 'Oltre 50.000 partecipanti ai corsi online' },
+  { icon: Heart, text: 'Mamma di 7 bambini — so esattamente cosa stai attraversando' },
 ]
 
 export default function About() {
@@ -54,7 +54,7 @@ export default function About() {
               <div className="relative w-64 h-64 sm:w-80 sm:h-80 rounded-full overflow-hidden shadow-strong">
                 <Image
                   src="/images/sarah.webp"
-                  alt="Sarah Mann — Certified Baby Sleep Consultant"
+                  alt="Sarah Mann — Consulente certificata del sonno infantile"
                   fill
                   className="object-cover object-top"
                 />
@@ -66,8 +66,8 @@ export default function About() {
                 transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
                 className="absolute -bottom-4 -right-4 bg-white rounded-3xl px-5 py-3 shadow-medium border border-sky-100"
               >
-                <p className="text-warm-700 font-semibold text-sm">50,000+ families</p>
-                <p className="text-warm-400 text-xs">trust Land of Little Dreamers</p>
+                <p className="text-warm-700 font-semibold text-sm">50.000+ famiglie</p>
+                <p className="text-warm-400 text-xs">si fidano de Il Regno della Nanna</p>
               </motion.div>
 
               {/* Floating stars badge */}
@@ -94,29 +94,29 @@ export default function About() {
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1], delay: 0.1 }}
           >
             <p className="text-sky-500 font-semibold text-sm uppercase tracking-widest mb-4">
-              About Sarah
+              Chi è Sarah
             </p>
             <h2
               className="font-serif font-light text-warm-800 leading-tight mb-6"
               style={{ fontSize: 'clamp(1.9rem, 4vw, 3rem)' }}
             >
-              Hi, I'm <em className="text-sky-400 not-italic">Sarah</em>
+              Ciao, sono <em className="text-sky-400 not-italic">Sarah</em>
             </h2>
 
             <div className="space-y-4 text-warm-600 leading-relaxed mb-8">
               <p>
-                I'm a certified baby sleep consultant, Master of Education, and mom of seven.
-                I know sleepless nights all too well — that bone-deep exhaustion you feel
-                right now. I understand exactly what you're going through.
+                Sono consulente certificata del sonno infantile, Master of Education e mamma di sette bambini.
+                Conosco bene le notti insonni — quella stanchezza profonda che senti in questo momento.
+                So esattamente cosa stai attraversando.
               </p>
               <p>
-                That's why <strong className="text-warm-800">Land of Little Dreamers</strong> exists.
-                It's the result of years of research, my certification as a gentle sleep consultant,
-                and my personal experiences with my seven beloved children.
+                Per questo esiste <strong className="text-warm-800">Il Regno della Nanna</strong>.
+                È il frutto di anni di ricerca, della mia formazione come consulente del sonno delicato
+                e delle mie esperienze personali con i miei sette adorati bambini.
               </p>
               <p>
-                You're in the right place if you're a heart-centered parent searching for
-                loving and effective sleep solutions for your baby or toddler.
+                Sei nel posto giusto se sei una mamma (o un papà) alla ricerca di soluzioni
+                amorevoli ed efficaci per il sonno del tuo bambino o del tuo bimbo piccolo.
               </p>
             </div>
 
@@ -143,7 +143,7 @@ export default function About() {
             </div>
 
             <button onClick={openModal} className="btn-primary">
-              Start your free journey
+              Inizia il corso gratuito
             </button>
           </motion.div>
         </div>

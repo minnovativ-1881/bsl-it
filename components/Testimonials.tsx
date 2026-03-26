@@ -59,7 +59,7 @@ const testimonials = [
 ]
 
 const statsData = [
-  { value: '30.000+', label: 'Partecipanti ai corsi' },
+  { value: '50.000+', label: 'Partecipanti ai corsi' },
   { value: '7.000+', label: 'E-book venduti' },
   { value: '100%', label: 'Consulente certificata' },
   { value: '4.8★', label: 'Valutazione media' },

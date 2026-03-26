@@ -144,7 +144,7 @@ export default function GratisPage() {
                 {[...Array(5)].map((_, i) => (
                   <Star key={i} className="w-4 h-4 text-yellow-400 fill-yellow-400" />
                 ))}
-                <span className="ml-1">30.000+ famiglie</span>
+                <span className="ml-1">50.000+ famiglie</span>
               </div>
             </motion.div>
 
@@ -351,7 +351,7 @@ export default function GratisPage() {
                 <em className="text-blush-400 not-italic">risultati reali</em>
               </h2>
               <p className="text-warm-500 text-base leading-relaxed">
-                Oltre 30.000 famiglie hanno seguito questo corso. Ecco cosa dicono alcune di loro.
+                Oltre 50.000 famiglie hanno seguito questo corso. Ecco cosa dicono alcune di loro.
               </p>
             </motion.div>
 
@@ -439,14 +439,14 @@ export default function GratisPage() {
                 </p>
                 <p className="text-warm-600 leading-relaxed mb-6">
                   Attraverso il suo blog, consulenze personalizzate, libri di successo e corsi pratici, ha gia aiutato{' '}
-                  <strong className="text-warm-800">piu di 30.000 genitori</strong> a migliorare il sonno dei loro bambini e a ritrovare una vita familiare piu serena.
+                  <strong className="text-warm-800">piu di 50.000 genitori</strong> a migliorare il sonno dei loro bambini e a ritrovare una vita familiare piu serena.
                 </p>
 
                 <div className="space-y-3">
                   {[
                     { icon: Award, text: 'Consulente certificata del sonno infantile — Institute of Sensitive Sleep Consulting, Australia' },
                     { icon: BookOpen, text: 'Master of Education, autrice di diversi libri e corsi' },
-                    { icon: Users, text: 'Oltre 30.000 partecipanti ai corsi — 12+ anni di esperienza' },
+                    { icon: Users, text: 'Oltre 50.000 partecipanti ai corsi — 12+ anni di esperienza' },
                     { icon: Heart, text: 'Mamma di 7 figli — sa esattamente cosa stai vivendo' },
                   ].map((cred, i) => {
                     const Icon = cred.icon

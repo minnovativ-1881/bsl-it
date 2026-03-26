@@ -10,44 +10,28 @@ import { useOptIn } from '@/context/OptInContext'
 
 const articles = [
   {
-    slug: '4-month-sleep-regression',
-    title: '4-Month Sleep Regression – Everything You Need to Know',
-    excerpt: "Around four months, your baby's sleep changes permanently. Here's what to expect and how to survive this challenging phase with confidence.",
-    category: 'Sleep Regression',
-    image: '/images/4-month-sleep-regression.webp',
-    readTime: '8 min read',
+    slug: 'regressione-sonno-4-mesi',
+    title: 'Regressione del sonno 4 mesi – tutto quello che devi sapere',
+    excerpt: 'Verso i 4 mesi il sonno del tuo bambino cambia per sempre. Ecco cosa aspettarti e come affrontare questa fase con dolcezza e tanta informazione.',
+    category: 'Regressione del Sonno',
+    image: '/images/regressione-sonno-4-mesi.webp',
+    readTime: '8 min di lettura',
   },
   {
-    slug: 'baby-short-naps',
-    title: 'Baby Short Naps: Why They Happen and How to Extend Them',
-    excerpt: "Your baby wakes after exactly 45 minutes every nap? You're not alone. Here's the science behind short naps and gentle ways to lengthen them.",
-    category: 'Naps',
-    image: '/images/baby-short-naps.webp',
-    readTime: '6 min read',
+    slug: 'bambino-si-sveglia-notte',
+    title: 'Il tuo bambino si sveglia di notte? 10 cause e 12 soluzioni',
+    excerpt: 'Risvegli frequenti, notti difficili — ci sono molte cause e altrettante soluzioni dolci. Scopri cosa si nasconde dietro i risvegli notturni del tuo bambino.',
+    category: 'Risvegli Notturni',
+    image: '/images/bambino-si-sveglia-notte.webp',
+    readTime: '9 min di lettura',
   },
   {
-    slug: 'earlier-baby-bedtime',
-    title: 'Earlier Baby Bedtime: Why It Works and How to Make the Switch',
-    excerpt: "Counterintuitively, an earlier bedtime often means better sleep — fewer night wakings and longer stretches. Here's how to shift your baby's schedule.",
-    category: 'Routines',
-    image: '/images/earlier-baby-bedtime.webp',
-    readTime: '5 min read',
-  },
-  {
-    slug: 'self-soothing-baby',
-    title: 'Self-Soothing: How to Help Your Baby Fall Asleep Independently',
-    excerpt: "Self-soothing doesn't mean leaving your baby to cry. Here's how to gently build this skill in a way that respects your baby's needs.",
-    category: 'Sleep Methods',
-    image: '/images/self-soothing-baby.webp',
-    readTime: '7 min read',
-  },
-  {
-    slug: 'why-baby-keeps-waking-up',
-    title: 'Why Does My Baby Keep Waking Up at Night?',
-    excerpt: "Frequent night waking has many causes — and most of them have gentle solutions. Find out what's behind your baby's night wakings and what actually helps.",
-    category: 'Night Waking',
-    image: '/images/baby-keeps-waking-up.webp',
-    readTime: '9 min read',
+    slug: 'bambino-non-dorme-lettino-accanto',
+    title: '"Il mio bambino non dorme nel lettino accanto" – 7 consigli',
+    excerpt: 'Le culle next to me sono molto apprezzate — ma spesso la teoria è più semplice della pratica. Ecco 7 consigli utili per aiutarti.',
+    category: 'Sonno nel Lettino',
+    image: '/images/bambino-non-dorme-lettino-accanto.webp',
+    readTime: '6 min di lettura',
   },
 ]
 
@@ -70,7 +54,7 @@ export default function BlogPage() {
               transition={{ duration: 0.5 }}
               className="text-blush-400 font-semibold text-sm uppercase tracking-widest mb-4"
             >
-              Sleep insights
+              Approfondimenti sul sonno
             </motion.p>
             <motion.h1
               initial={{ opacity: 0, y: 30 }}
@@ -79,8 +63,8 @@ export default function BlogPage() {
               className="font-serif font-light text-warm-800 leading-tight mb-6"
               style={{ fontSize: 'clamp(2.4rem, 5.5vw, 4rem)' }}
             >
-              Baby Sleep{' '}
-              <em className="text-blush-400 not-italic">Blog</em>
+              Blog sul Sonno del{' '}
+              <em className="text-blush-400 not-italic">Bambino</em>
             </motion.h1>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
@@ -88,7 +72,7 @@ export default function BlogPage() {
               transition={{ duration: 0.7, delay: 0.25 }}
               className="text-lg sm:text-xl text-warm-500 leading-relaxed"
             >
-              Evidence-based insights for tired parents. Clear, practical, and always gentle.
+              Consigli basati sulla ricerca per genitori stanchi. Chiari, pratici e sempre dolci.
             </motion.p>
           </div>
         </section>
@@ -147,7 +131,7 @@ export default function BlogPage() {
                         href={`/blog/${article.slug}`}
                         className="inline-flex items-center gap-1.5 text-blush-500 hover:text-blush-600 text-sm font-medium transition-colors"
                       >
-                        Read article →
+                        Leggi l&apos;articolo →
                       </Link>
                     </div>
                   </div>
@@ -178,20 +162,20 @@ export default function BlogPage() {
                 className="font-serif font-light text-white leading-tight mb-5"
                 style={{ fontSize: 'clamp(1.8rem, 4.5vw, 3rem)' }}
               >
-                Want practical sleep tips delivered daily?
+                Vuoi consigli pratici sul sonno direttamente in casella di posta?
               </h2>
               <p className="text-white/80 text-lg mb-8">
-                Join the free email course and start seeing results in the first week.
+                Iscriviti al corso gratuito via e-mail e inizia a vedere i risultati nella prima settimana.
               </p>
               <button
                 onClick={openModal}
                 className="bg-white text-blush-500 hover:bg-blush-50 font-semibold px-10 py-4 rounded-full text-lg transition-all duration-300 hover:shadow-medium inline-flex items-center gap-2"
               >
-                Join the Free Course
+                Iscriviti al Corso Gratuito
                 <ArrowRight className="w-5 h-5" />
               </button>
               <p className="text-white/60 text-sm mt-5">
-                No commitment. Unsubscribe anytime. GDPR-compliant.
+                Nessun impegno. Disiscriviti in qualsiasi momento. Conformità GDPR.
               </p>
             </motion.div>
           </div>

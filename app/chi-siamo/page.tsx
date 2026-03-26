@@ -377,7 +377,7 @@ export default function AboutPage() {
                 Pronta a migliorare il sonno del tuo bambino?
               </h2>
               <p className="text-white/80 text-lg mb-8">
-                Iscriviti al corso gratuito sul sonno del bambino — amato da 30.000+ famiglie.
+                Iscriviti al corso gratuito sul sonno del bambino — amato da 50.000+ famiglie.
               </p>
               <button
                 onClick={openModal}

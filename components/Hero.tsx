@@ -212,7 +212,7 @@ export default function Hero() {
                   ))}
                 </div>
                 <p className="text-sm text-warm-500">
-                  <strong className="text-warm-700 font-semibold">30.000+ famiglie</strong> si fidano de Il Regno della Nanna
+                  <strong className="text-warm-700 font-semibold">50.000+ famiglie</strong> si fidano de Il Regno della Nanna
                 </p>
               </div>
             </motion.div>
