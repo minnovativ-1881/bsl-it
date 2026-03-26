@@ -6,81 +6,107 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import { useOptIn } from '@/context/OptInContext'
 
-// ─── Shared chart primitives ──────────────────────────────────────────────────
+// ─── Shared primitives ───────────────────────────────────────────────────────
 
 const BADGE = 'GENITORI NEL PRIMO ANNO CON IL BAMBINO'
 const FOOTER = 'SONDAGGIO · 1.100 PARTECIPANTI · FEB 2025 · BABYSCHLUMMERLAND.DE'
+const BRAND_BLUE = '#3E85B0'   // sky-500
+const BRAND_BLUE_BG = '#2a6990' // slightly darker for dark-card backgrounds
 
 function ChartCard({ children, dark = false }: { children: React.ReactNode; dark?: boolean }) {
   return (
-    <div className={`rounded-3xl p-6 sm:p-8 ${dark ? 'bg-[#1a1a2e] text-white' : 'bg-white border border-warm-100'}`}>
-      <p className={`text-[9px] font-semibold tracking-[0.18em] uppercase text-center mb-5 ${dark ? 'text-warm-500' : 'text-warm-300'}`}>
+    <div
+      className={`rounded-3xl p-6 sm:p-8 ${dark ? 'text-white' : 'bg-white border border-warm-100'}`}
+      style={dark ? { backgroundColor: BRAND_BLUE_BG } : {}}
+    >
+      <p
+        className={`text-[9px] font-semibold tracking-[0.18em] uppercase text-center mb-5 ${dark ? 'text-sky-200' : 'text-warm-300'}`}
+      >
         {BADGE}
       </p>
       {children}
-      <p className={`text-[8px] tracking-[0.12em] uppercase text-center mt-6 ${dark ? 'text-warm-600' : 'text-warm-300'}`}>
+      <p className={`text-[8px] tracking-[0.12em] uppercase text-center mt-6 ${dark ? 'text-sky-300/60' : 'text-warm-300'}`}>
         {FOOTER}
       </p>
     </div>
   )
 }
 
-// ─── Chart 1: Confronto del Sonno (bar chart) ─────────────────────────────────
+// CSS crescent moon (no emoji)
+function MoonIcon({ size = 14, color = 'white' }: { size?: number; color?: string }) {
+  return (
+    <span
+      className="inline-block rounded-full"
+      style={{
+        width: size,
+        height: size,
+        background: 'transparent',
+        border: `${Math.round(size * 0.14)}px solid ${color}`,
+        boxShadow: `inset ${Math.round(size * 0.28)}px ${Math.round(size * -0.1)}px 0 0 ${color}`,
+      }}
+    />
+  )
+}
 
-function SleepComparisonChart() {
-  const items = [
-    { label: 'Bambini piccoli (1–3 anni)', h: 12, bold: false },
-    { label: 'Adolescenti (14–17 anni)', h: 9, bold: false },
-    { label: 'Atleti professionisti in allenamento', h: 8.5, bold: false },
-    { label: 'Adulti medi', h: 8, bold: false },
-    { label: 'Medici di guardia notturna', h: 7, bold: false },
-    { label: 'Astronauti sulla ISS', h: 6.5, bold: false },
-    { label: 'Lavoratori a turni', h: 6.5, bold: false },
-    { label: 'Soldati in servizio attivo', h: 6, bold: false },
-    { label: 'Genitori nel primo anno', h: 5.5, bold: true },
-  ]
-  const max = 12
-  const ticks = [0, 2, 4, 6, 8, 10, 12]
+// ─── Bar chart helpers (pixel-accurate axis alignment) ────────────────────────
+
+interface BarItem { label: string; value: number; highlight?: boolean }
+
+function BarChart({
+  items, max, unit, dark = false,
+}: {
+  items: BarItem[]; max: number; unit: string; dark?: boolean
+}) {
+  const LABEL_W = 180 // px — identical for label spacer and tick spacer
+  const ticks = Array.from({ length: Math.floor(max / 2) + 1 }, (_, i) => i * 2)
 
   return (
-    <ChartCard>
-      <h3 className="font-sans font-black text-warm-900 text-2xl sm:text-3xl text-center mb-2">
-        Confronto del Sonno
-      </h3>
-      <p className="text-warm-500 text-sm text-center mb-8 max-w-sm mx-auto">
-        I genitori nel primo anno dormono meno dei medici di guardia notturna.
-      </p>
-      <div className="space-y-1">
+    <div className="w-full">
+      <div className="space-y-1.5">
         {items.map((item) => (
-          <div
-            key={item.label}
-            className={`flex items-center gap-3 py-1.5 px-2 rounded-xl ${item.bold ? 'bg-blush-50 border border-blush-200' : ''}`}
-          >
-            <span className={`text-xs text-right shrink-0 w-36 sm:w-44 leading-tight ${item.bold ? 'font-bold text-warm-900' : 'text-warm-500'}`}>
+          <div key={item.label} className={`flex items-center gap-3 py-1 px-2 rounded-xl ${item.highlight ? 'bg-blush-50 border border-blush-200' : ''}`}>
+            <span
+              className={`text-xs leading-tight text-right shrink-0 ${item.highlight ? 'font-bold text-warm-900' : dark ? 'text-sky-100' : 'text-warm-500'}`}
+              style={{ width: LABEL_W }}
+            >
               {item.label}
             </span>
-            <div className="flex-1 h-5 bg-warm-100 rounded-full overflow-hidden">
+            <div className="relative flex-1 h-5 rounded-full overflow-hidden bg-white/20">
               <div
-                className={`h-full rounded-full transition-all ${item.bold ? 'bg-blush-400' : 'bg-[#4a4a7a]'}`}
-                style={{ width: `${(item.h / max) * 100}%` }}
+                className="absolute inset-y-0 left-0 rounded-full transition-all"
+                style={{
+                  width: `${(item.value / max) * 100}%`,
+                  backgroundColor: item.highlight ? '#C98B85' : dark ? 'rgba(255,255,255,0.75)' : '#4a4a7a',
+                }}
               />
             </div>
           </div>
         ))}
       </div>
-      <div className="flex mt-2 ml-[9.5rem] sm:ml-[11.5rem]">
-        {ticks.map((t, i) => (
-          <span key={t} className="text-[10px] text-warm-400" style={{ flex: i === ticks.length - 1 ? '0 0 auto' : '1 1 0' }}>
-            {t}
-          </span>
-        ))}
+      {/* Tick marks aligned exactly with bar area */}
+      <div className="flex items-center gap-3 mt-1.5">
+        <div style={{ width: LABEL_W, flexShrink: 0 }} />
+        <div className="relative flex-1 h-4">
+          {ticks.map((t) => (
+            <span
+              key={t}
+              className={`absolute text-[10px] ${dark ? 'text-sky-200/70' : 'text-warm-400'}`}
+              style={{ left: `${(t / max) * 100}%`, transform: 'translateX(-50%)' }}
+            >
+              {t}
+            </span>
+          ))}
+        </div>
       </div>
-      <p className="text-[10px] text-warm-400 text-right mt-0.5 pr-1">Ore di Sonno per Notte</p>
-    </ChartCard>
+      <div className="flex items-center gap-3">
+        <div style={{ width: LABEL_W, flexShrink: 0 }} />
+        <p className={`text-[10px] ${dark ? 'text-sky-200/70' : 'text-warm-400'}`}>{unit}</p>
+      </div>
+    </div>
   )
 }
 
-// ─── Chart 2: Genitori in Crisi del Sonno (area chart) ───────────────────────
+// ─── Chart 1: Genitori in Crisi del Sonno (SVG area, square) ─────────────────
 
 function SleepCrisisChart() {
   return (
@@ -88,37 +114,30 @@ function SleepCrisisChart() {
       <h3 className="font-sans font-black text-warm-900 text-2xl sm:text-3xl text-center mb-2">
         Genitori in Crisi del Sonno
       </h3>
-      <p className="text-warm-500 text-sm text-center mb-8 max-w-sm mx-auto">
+      <p className="text-warm-500 text-sm text-center mb-6 max-w-sm mx-auto">
         Ecco come diminuisce drasticamente la durata del sonno per i genitori nel primo anno.
       </p>
-      <div className="relative mx-auto" style={{ maxWidth: 420, height: 200 }}>
-        <svg viewBox="0 0 420 200" className="w-full h-full" preserveAspectRatio="none">
-          {/* Prima della nascita – larger pink triangle */}
-          <polygon points="0,200 420,0 420,200" fill="#F4C5BE" opacity="0.9" />
-          {/* Sonno nel primo anno – smaller blue triangle */}
-          <polygon points="0,200 420,60 420,200" fill="#6366a8" opacity="0.85" />
+      {/* Square container */}
+      <div className="relative mx-auto aspect-square max-w-xs">
+        <svg viewBox="0 0 300 300" className="w-full h-full" preserveAspectRatio="xMidYMid meet">
+          {/* Before birth – large triangle (top half) */}
+          <polygon points="0,300 300,0 300,300" fill="#F4C5BE" opacity="0.9" />
+          {/* First year – smaller triangle */}
+          <polygon points="0,300 300,100 300,300" fill={BRAND_BLUE} opacity="0.85" />
+          {/* Labels */}
+          <text x="230" y="30" textAnchor="middle" fontSize="11" fontWeight="600" fill="#5C4440">Prima della Nascita</text>
+          <text x="230" y="120" textAnchor="middle" fontSize="10" fontWeight="600" fill="white">Sonno nel Primo</text>
+          <text x="230" y="133" textAnchor="middle" fontSize="10" fontWeight="600" fill="white">Anno di Genitorialità</text>
+          {/* Axes */}
+          <text x="8" y="155" fontSize="9" fill="#9A6E69" transform="rotate(-90,8,155)">Ore di Sonno per Notte</text>
+          <text x="280" y="295" fontSize="9" fill="#9A6E69">1 Anno</text>
         </svg>
-        {/* Labels */}
-        <div className="absolute top-2 right-3 text-right">
-          <span className="text-xs font-semibold text-warm-700 bg-white/80 px-2 py-0.5 rounded">Prima della Nascita</span>
-        </div>
-        <div className="absolute bottom-10 right-3 text-right">
-          <span className="text-xs font-semibold text-white/90 bg-[#6366a8]/80 px-2 py-0.5 rounded leading-tight block">
-            Sonno nel Primo<br />Anno di Genitorialità
-          </span>
-        </div>
-        <div className="absolute left-1 top-1/2 -translate-y-1/2 -rotate-90 origin-left">
-          <span className="text-[9px] text-warm-400 whitespace-nowrap">Ore di Sonno per Notte</span>
-        </div>
-        <div className="absolute bottom-1 right-1">
-          <span className="text-[9px] text-warm-400">1 Anno</span>
-        </div>
       </div>
     </ChartCard>
   )
 }
 
-// ─── Chart 3: 109 Notti Senza Sonno (dot grid) ───────────────────────────────
+// ─── Chart 2: 109 Notti Senza Sonno (moon grid, square, brand blue) ───────────
 
 function SleeplessNightsChart() {
   const nights = 109
@@ -127,21 +146,23 @@ function SleeplessNightsChart() {
       <h3 className="font-sans font-black text-white text-2xl sm:text-3xl text-center mb-2">
         109 Notti Senza Sonno
       </h3>
-      <p className="text-warm-300 text-sm text-center mb-8 max-w-sm mx-auto">
-        Nel primo anno, i genitori perdono in media <strong className="text-white">912 ore di sonno</strong> — l&apos;equivalente di <strong className="text-white">109 notti intere</strong> senza riposare.
+      <p className="text-sky-100 text-sm text-center mb-8 max-w-sm mx-auto">
+        Nel primo anno, i genitori perdono in media <strong className="text-white">912 ore di sonno</strong> —
+        l&apos;equivalente di <strong className="text-white">109 notti intere</strong> senza riposare.
       </p>
-      <div className="flex flex-wrap gap-1.5 justify-center max-w-xs mx-auto">
-        {Array.from({ length: nights }).map((_, i) => (
-          <span key={i} className="text-base leading-none select-none" role="img" aria-label="notte">
-            🌙
-          </span>
-        ))}
+      {/* Square grid of moon icons */}
+      <div className="mx-auto aspect-square max-w-xs flex items-center justify-center">
+        <div className="flex flex-wrap gap-2 justify-center">
+          {Array.from({ length: nights }).map((_, i) => (
+            <MoonIcon key={i} size={16} color="white" />
+          ))}
+        </div>
       </div>
     </ChartCard>
   )
 }
 
-// ─── Chart 4: Sonno Frammentato (dot grid) ────────────────────────────────────
+// ─── Chart 3: Non Solo Breve — Anche Frammentato (dot grid, brand blue) ───────
 
 function FragmentedSleepChart() {
   const interruptions = 1126
@@ -150,32 +171,59 @@ function FragmentedSleepChart() {
       <h3 className="font-sans font-black text-white text-2xl sm:text-3xl text-center mb-2">
         Non Solo Breve —<br />Anche Frammentato!
       </h3>
-      <p className="text-warm-300 text-sm text-center mb-8 max-w-sm mx-auto">
-        Nel primo anno, i genitori subiscono oltre <strong className="text-white">1.126 interruzioni notturne</strong>!
+      <p className="text-sky-100 text-sm text-center mb-8 max-w-sm mx-auto">
+        Nel primo anno, i genitori subiscono oltre{' '}
+        <strong className="text-white">1.126 interruzioni notturne</strong>!
       </p>
-      <div className="flex flex-wrap gap-0.5 justify-center max-w-xs mx-auto">
-        {Array.from({ length: interruptions }).map((_, i) => (
-          <span
-            key={i}
-            className="w-2 h-2 rounded-full inline-block"
-            style={{ backgroundColor: i % 7 === 0 ? '#F4C5BE' : '#4a4a7a' }}
-          />
-        ))}
+      <div className="mx-auto aspect-square max-w-xs flex items-center justify-center">
+        <div className="flex flex-wrap gap-[3px] justify-center">
+          {Array.from({ length: interruptions }).map((_, i) => (
+            <span
+              key={i}
+              className="rounded-full inline-block"
+              style={{ width: 7, height: 7, backgroundColor: 'rgba(255,255,255,0.8)' }}
+            />
+          ))}
+        </div>
       </div>
     </ChartCard>
   )
 }
 
-// ─── Chart 5: La Vita Quotidiana (bar chart) ──────────────────────────────────
+// ─── Chart 4: Confronto del Sonno (horizontal bar chart, corrected values) ────
+
+function SleepComparisonChart() {
+  const items: BarItem[] = [
+    { label: 'Bambini piccoli (1–3 anni)', value: 12 },
+    { label: 'Adolescenti (14–17 anni)', value: 9 },
+    { label: 'Atleti professionisti in allenamento', value: 8.5 },
+    { label: 'Adulti medi', value: 8 },
+    { label: 'Medici di guardia notturna', value: 7 },
+    { label: 'Astronauti sulla ISS', value: 6.5 },
+    { label: 'Lavoratori a turni', value: 6.5 },
+    { label: 'Soldati in servizio attivo', value: 6 },
+    { label: 'Genitori nel primo anno', value: 5.5, highlight: true },
+  ]
+  return (
+    <ChartCard>
+      <h3 className="font-sans font-black text-warm-900 text-2xl sm:text-3xl text-center mb-2">
+        Confronto del Sonno
+      </h3>
+      <p className="text-warm-500 text-sm text-center mb-8 max-w-sm mx-auto">
+        I genitori nel primo anno dormono meno dei medici di guardia notturna.
+      </p>
+      <BarChart items={items} max={12} unit="Ore di Sonno per Notte" />
+    </ChartCard>
+  )
+}
+
+// ─── Chart 5: La Vita Quotidiana (2-bar chart, corrected values) ──────────────
 
 function DailyLifeChart() {
-  const items = [
-    { label: 'Cullare il bambino per farlo addormentare', days: 10.9 },
-    { label: 'Svegli nel letto, in attesa del sonno', days: 12.2 },
+  const items: BarItem[] = [
+    { label: 'Cullare il bambino per farlo addormentare', value: 10.9 },
+    { label: 'Svegli nel letto, in attesa del sonno', value: 12.2 },
   ]
-  const max = 13
-  const ticks = [0, 2, 4, 6, 8, 10, 12]
-
   return (
     <ChartCard>
       <h3 className="font-sans font-black text-warm-900 text-2xl sm:text-3xl text-center mb-2">
@@ -184,29 +232,7 @@ function DailyLifeChart() {
       <p className="text-warm-500 text-sm text-center mb-8 max-w-sm mx-auto">
         Convertito in giorni interi, i genitori trascorrono questo tempo nel primo anno...
       </p>
-      <div className="space-y-3">
-        {items.map((item) => (
-          <div key={item.label} className="flex items-center gap-3">
-            <span className="text-xs text-warm-600 text-right shrink-0 w-36 sm:w-44 leading-tight">
-              {item.label}
-            </span>
-            <div className="flex-1 h-7 bg-warm-100 rounded-full overflow-hidden">
-              <div
-                className="h-full rounded-full bg-[#4a4a7a]"
-                style={{ width: `${(item.days / max) * 100}%` }}
-              />
-            </div>
-          </div>
-        ))}
-      </div>
-      <div className="flex mt-2 ml-[9.5rem] sm:ml-[11.5rem]">
-        {ticks.map((t, i) => (
-          <span key={t} className="text-[10px] text-warm-400" style={{ flex: i === ticks.length - 1 ? '0 0 auto' : '1 1 0' }}>
-            {t}
-          </span>
-        ))}
-      </div>
-      <p className="text-[10px] text-warm-400 text-right mt-0.5 pr-1">Giorni all&apos;Anno</p>
+      <BarChart items={items} max={14} unit="Giorni all'Anno" />
       <div className="mt-6 bg-blush-50 border border-blush-200 rounded-2xl p-4 text-sm text-warm-700 text-center">
         In media, i genitori trascorrono circa{' '}
         <strong className="underline decoration-blush-400">un giorno intero al mese</strong> a cullare il bambino
@@ -216,7 +242,7 @@ function DailyLifeChart() {
   )
 }
 
-// ─── Chart 6: Difficoltà Notturne (stat layout) ──────────────────────────────
+// ─── Chart 6: Difficoltà Notturne ─────────────────────────────────────────────
 
 function NighttimeStrugglesChart() {
   const stats = [
@@ -225,7 +251,6 @@ function NighttimeStrugglesChart() {
     { pct: '35%', text: 'dei genitori si sente spesso o sempre solo durante le cure notturne.' },
     { pct: '42%', text: 'dei genitori si sente spesso o molto spesso esausto o sopraffatto.' },
   ]
-
   return (
     <ChartCard>
       <h3 className="font-sans font-black text-warm-900 text-2xl sm:text-3xl text-center mb-8">
@@ -234,7 +259,7 @@ function NighttimeStrugglesChart() {
       <div className="space-y-5">
         {stats.map((s) => (
           <div key={s.pct} className="flex items-start gap-4">
-            <span className="font-black text-3xl sm:text-4xl text-[#4a4a7a] shrink-0 leading-none w-20 text-right">
+            <span className="font-black text-3xl sm:text-4xl shrink-0 leading-none w-20 text-right" style={{ color: BRAND_BLUE }}>
               {s.pct}
             </span>
             <p className="text-warm-600 text-sm leading-relaxed">{s.text}</p>
@@ -293,7 +318,7 @@ export default function RicercaPage() {
                 Oltre 100 Notti Insonni — Perché la Privazione del Sonno È Molto Più di una Semplice Stanchezza
               </h1>
               <p className="text-warm-300 text-lg leading-relaxed">
-                All&apos;inizio del 2024, abbiamo intervistato 1.100 genitori sul loro sonno nel primo anno di vita del loro bambino.
+                All&apos;inizio del 2025, abbiamo intervistato 1.100 genitori sul loro sonno nel primo anno di vita del loro bambino.
                 I risultati confermano ciò che tanti genitori già sentono — ma raramente vedono tradotto in numeri.
               </p>
             </motion.div>
@@ -330,10 +355,9 @@ export default function RicercaPage() {
           </div>
         </section>
 
-        {/* Article sections with charts */}
+        {/* Article with charts */}
         <article className="max-w-3xl mx-auto px-6 pb-20 space-y-16">
 
-          {/* 1: Sonno perso */}
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '-60px' }} transition={{ duration: 0.6 }}>
             <h2 className="font-serif font-light text-warm-800 text-2xl sm:text-3xl mb-4">912 Ore di Sonno Perdute</h2>
             <p className="text-warm-600 leading-relaxed mb-4">
@@ -345,7 +369,6 @@ export default function RicercaPage() {
             <SleepCrisisChart />
           </motion.div>
 
-          {/* 2: 109 notti */}
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '-60px' }} transition={{ duration: 0.6 }}>
             <h2 className="font-serif font-light text-warm-800 text-2xl sm:text-3xl mb-4">Risvegli Continui</h2>
             <p className="text-warm-600 leading-relaxed mb-4">
@@ -357,7 +380,6 @@ export default function RicercaPage() {
             <SleeplessNightsChart />
           </motion.div>
 
-          {/* 3: Frammentato */}
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '-60px' }} transition={{ duration: 0.6 }}>
             <h2 className="font-serif font-light text-warm-800 text-2xl sm:text-3xl mb-4">Recuperare Sonno? Quasi Impossibile.</h2>
             <p className="text-warm-600 leading-relaxed mb-4">&ldquo;Dormi quando dorme il bambino&rdquo; — ma nella realtà, questo non funziona per la maggior parte dei genitori.</p>
@@ -368,7 +390,6 @@ export default function RicercaPage() {
             <FragmentedSleepChart />
           </motion.div>
 
-          {/* 4: Confronto sonno */}
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '-60px' }} transition={{ duration: 0.6 }}>
             <h2 className="font-serif font-light text-warm-800 text-2xl sm:text-3xl mb-4">Meno Sonno dei Medici di Guardia</h2>
             <p className="text-warm-600 leading-relaxed mb-8">
@@ -377,7 +398,6 @@ export default function RicercaPage() {
             <SleepComparisonChart />
           </motion.div>
 
-          {/* 5: Cullare */}
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '-60px' }} transition={{ duration: 0.6 }}>
             <h2 className="font-serif font-light text-warm-800 text-2xl sm:text-3xl mb-4">Quasi 11 Giorni Interi a Cullare il Bambino</h2>
             <p className="text-warm-600 leading-relaxed mb-8">
@@ -386,7 +406,6 @@ export default function RicercaPage() {
             <DailyLifeChart />
           </motion.div>
 
-          {/* 6: Peso emotivo */}
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '-60px' }} transition={{ duration: 0.6 }}>
             <h2 className="font-serif font-light text-warm-800 text-2xl sm:text-3xl mb-4">Più della Semplice Stanchezza</h2>
             <p className="text-warm-600 leading-relaxed mb-8">
@@ -417,7 +436,7 @@ export default function RicercaPage() {
           </motion.div>
 
           <p className="text-warm-400 text-xs leading-relaxed border-t border-blush-100 pt-6">
-            Sondaggio condotto nel febbraio 2024. Hanno partecipato 1.100 genitori nel primo anno di vita del loro bambino.
+            Sondaggio condotto nel febbraio 2025. Hanno partecipato 1.100 genitori nel primo anno di vita del loro bambino.
             Pubblicato da Il Regno della Nanna (Babyschlummerland). I dati riflettono esperienze auto-riferite.
           </p>
 
