@@ -199,6 +199,24 @@ export default function BambinoDormeSoloAlSenoPage() {
             </Link>
           </div>
 
+          {/* FAQ */}
+          <h2 className="font-serif font-semibold text-warm-800 text-2xl mt-10 mb-4">FAQ – Domande frequenti</h2>
+
+          <h3 className="font-serif font-semibold text-warm-700 text-xl mt-8 mb-3">Quando dovrei smettere di allattare il mio bambino per farlo addormentare?</h3>
+          <p className="text-warm-600 leading-relaxed mb-4">Non esiste un &quot;dovere&quot; universale: finché funziona per entrambi, va bene. Il momento di cambiare arriva quando la situazione diventa insostenibile per la mamma — per esempio a causa di risvegli notturni ogni ora o due. Molte consulenti del sonno consigliano di lavorarci a partire dai 6-9 mesi, quando il bambino è pronto anche dal punto di vista dello sviluppo.</p>
+
+          <h3 className="font-serif font-semibold text-warm-700 text-xl mt-8 mb-3">Quanto tempo ci vuole per rompere l&apos;abitudine di addormentarsi al seno?</h3>
+          <p className="text-warm-600 leading-relaxed mb-4">Con un approccio graduale e costante, molte famiglie vedono miglioramenti significativi in 1-3 settimane. La velocità dipende dall&apos;età del bambino, dalla sua personalità e dalla coerenza dei genitori. Non esistono soluzioni istantanee, ma la pazienza viene sempre ripagata.</p>
+
+          <h3 className="font-serif font-semibold text-warm-700 text-xl mt-8 mb-3">Quali alternative all&apos;allattamento posso usare per far addormentare il bambino?</h3>
+          <p className="text-warm-600 leading-relaxed mb-4">Le alternative più efficaci includono cullare dolcemente, cantare una ninna nanna, offrire contatto fisico come carezze sulla schiena, e usare una routine serale prevedibile. Il papà può svolgere un ruolo prezioso in questa fase, abituando il bambino a nuovi modi di calmarsi diversi dal seno.</p>
+
+          <h3 className="font-serif font-semibold text-warm-700 text-xl mt-8 mb-3">Se smetto di allattare di notte, il mio bambino avrà ancora abbastanza nutrimento?</h3>
+          <p className="text-warm-600 leading-relaxed mb-4">Sì, se il bambino ha più di 6-9 mesi e mangia regolarmente durante il giorno. Spesso i bambini che poppano molto di notte compensano riducendo l&apos;apporto diurno: ridurre le poppate notturne incoraggia automaticamente una migliore alimentazione di giorno.</p>
+
+          <h3 className="font-serif font-semibold text-warm-700 text-xl mt-8 mb-3">Il problema si risolve da solo col tempo, senza fare nulla?</h3>
+          <p className="text-warm-600 leading-relaxed mb-4">A volte sì, ma non sempre e spesso non abbastanza presto per i genitori esausti. Alcuni bambini continuano a richiedere il seno per addormentarsi fino ai 2-3 anni se non si interviene. Se la situazione è diventata pesante per la famiglia, ha senso agire con dolcezza piuttosto che aspettare passivamente.</p>
+
           {/* Author Box */}
           <div className="mt-12 border-t border-blush-100 pt-10 flex gap-5 items-start">
             <div className="w-16 h-16 rounded-full overflow-hidden flex-shrink-0">

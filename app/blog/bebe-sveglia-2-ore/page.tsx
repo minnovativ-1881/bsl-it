@@ -194,6 +194,24 @@ export default function BebeSveglia2OrePage() {
             </Link>
           </div>
 
+          {/* FAQ */}
+          <h2 className="font-serif font-semibold text-warm-800 text-2xl mt-10 mb-4">FAQ – Domande frequenti</h2>
+
+          <h3 className="font-serif font-semibold text-warm-700 text-xl mt-8 mb-3">Quanti risvegli notturni sono normali per un neonato?</h3>
+          <p className="text-warm-600 leading-relaxed mb-4">Nei primi mesi, svegliarsi ogni 2-3 ore è del tutto normale e fisiologico. I neonati hanno stomaci piccoli e cicli di sonno brevi. Dai 6 mesi in poi, 1-2 risvegli notturni sono ancora nella norma per molti bambini, specialmente se allattati al seno.</p>
+
+          <h3 className="font-serif font-semibold text-warm-700 text-xl mt-8 mb-3">Le associazioni di addormentamento causano i risvegli notturni frequenti?</h3>
+          <p className="text-warm-600 leading-relaxed mb-4">Sì, spesso. Se il bambino si addormenta sempre succhiando o in braccio, si aspetterà la stessa condizione ogni volta che si sveglia tra un ciclo di sonno e l&apos;altro — cioè ogni 45-90 minuti. Lavorare sull&apos;addormentamento autonomo riduce quasi sempre anche i risvegli notturni.</p>
+
+          <h3 className="font-serif font-semibold text-warm-700 text-xl mt-8 mb-3">Da quando posso iniziare a ridurre le poppate notturne?</h3>
+          <p className="text-warm-600 leading-relaxed mb-4">La maggior parte degli esperti ritiene che dai 6-9 mesi molti bambini possano farcela senza poppate notturne, specialmente quelli alimentati con biberon. Per i bambini allattati al seno, un buon riferimento è intorno ai 9 mesi. Prima dei 6 mesi, è sconsigliato forzare il sonno continuato.</p>
+
+          <h3 className="font-serif font-semibold text-warm-700 text-xl mt-8 mb-3">Anticipare la nanna aiuta il bambino a svegliarsi meno di notte?</h3>
+          <p className="text-warm-600 leading-relaxed mb-4">Sì, spesso è una delle strategie più efficaci. Un bambino che va a letto non troppo stanco dorme più in profondità e si sveglia meno frequentemente. Molti genitori notano un netto miglioramento dei risvegli notturni semplicemente anticipando la nanna di 30-60 minuti.</p>
+
+          <h3 className="font-serif font-semibold text-warm-700 text-xl mt-8 mb-3">Cos&apos;è la regressione del sonno dei 4 mesi e quanto dura?</h3>
+          <p className="text-warm-600 leading-relaxed mb-4">Intorno alle 14-19 settimane, il cervello del bambino matura e i cicli di sonno cambiano in modo permanente, diventando più simili a quelli degli adulti con più fasi di sonno leggero. Questo provoca più risvegli anche in bambini che dormivano bene. La fase acuta dura generalmente 2-6 settimane, ma le nuove abitudini di sonno restano — per questo è importante lavorare sull&apos;addormentamento autonomo in questo periodo.</p>
+
           {/* Author Box */}
           <div className="mt-12 border-t border-blush-100 pt-10 flex gap-5 items-start">
             <div className="w-16 h-16 rounded-full overflow-hidden flex-shrink-0">

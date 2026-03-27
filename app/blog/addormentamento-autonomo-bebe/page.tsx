@@ -304,6 +304,24 @@ export default function AddormentamentoAutonomoPage() {
             </Link>
           </div>
 
+          {/* FAQ */}
+          <h2 className="font-serif font-semibold text-warm-800 text-2xl mt-10 mb-4">FAQ – Domande frequenti</h2>
+
+          <h3 className="font-serif font-semibold text-warm-700 text-xl mt-8 mb-3">A partire da quale età posso insegnare al mio bambino ad addormentarsi da solo?</h3>
+          <p className="text-warm-600 leading-relaxed mb-4">Molti esperti del sonno consigliano di iniziare dolcemente tra i 6 e i 7 mesi, quando il bambino ha sviluppato le capacità cognitive per l&apos;autoregolazione emotiva. Tuttavia, già dalle 6-8 settimane è possibile esercitarsi occasionalmente mettendo il bambino nel lettino quando è sonnolento ma ancora sveglio.</p>
+
+          <h3 className="font-serif font-semibold text-warm-700 text-xl mt-8 mb-3">Cosa significa &quot;sonnolento ma sveglio&quot; e come lo riconosco?</h3>
+          <p className="text-warm-600 leading-relaxed mb-4">Il bambino è rilassato e assonnato, ma abbastanza cosciente da accorgersi di essere stato messo nel lettino. Non è ancora completamente addormentato. Questo è il momento ideale per posarlo: in questo modo impara gradualmente ad addormentarsi autonomamente senza dover essere completamente cullato o allattato fino all&apos;addormentamento profondo.</p>
+
+          <h3 className="font-serif font-semibold text-warm-700 text-xl mt-8 mb-3">Quanto tempo ci vuole perché il bambino impari ad addormentarsi da solo?</h3>
+          <p className="text-warm-600 leading-relaxed mb-4">Dipende dall&apos;età del bambino, dalla sua personalità e dal metodo scelto. Con un approccio dolce e costante, molti genitori vedono progressi significativi già dopo 1-2 settimane. La chiave è la coerenza: più si è regolari, più velocemente il bambino si adatta.</p>
+
+          <h3 className="font-serif font-semibold text-warm-700 text-xl mt-8 mb-3">Esistono metodi dolci per insegnare l&apos;addormentamento autonomo senza pianti intensi?</h3>
+          <p className="text-warm-600 leading-relaxed mb-4">Sì. Il metodo del distacco graduale, il Metodo PAL e il Metodo della Sedia sono tutti approcci che mantengono il genitore presente e riducono il pianto al minimo. L&apos;obiettivo è sempre accompagnare il bambino con rispetto, non abbandonarlo da solo.</p>
+
+          <h3 className="font-serif font-semibold text-warm-700 text-xl mt-8 mb-3">Insegnare al bambino ad addormentarsi da solo nuoce al legame con i genitori?</h3>
+          <p className="text-warm-600 leading-relaxed mb-4">No, se fatto in modo amorevole e graduale. Aiutare il bambino a sviluppare questa abilità rafforza la sua sicurezza interiore. Un bambino che dorme bene è più sereno, reattivo e capace di interagire positivamente — il che beneficia l&apos;intero legame familiare.</p>
+
           {/* Author Box */}
           <div className="mt-12 border-t border-blush-100 pt-10 flex gap-5 items-start">
             <div className="w-16 h-16 rounded-full overflow-hidden flex-shrink-0">

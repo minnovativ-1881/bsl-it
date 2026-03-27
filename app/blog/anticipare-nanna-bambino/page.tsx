@@ -280,6 +280,24 @@ export default function AnticiparNannaBambinoPage() {
             </Link>
           </div>
 
+          {/* FAQ */}
+          <h2 className="font-serif font-semibold text-warm-800 text-2xl mt-10 mb-4">FAQ – Domande frequenti</h2>
+
+          <h3 className="font-serif font-semibold text-warm-700 text-xl mt-8 mb-3">Se anticipo la nanna, il mio bambino si sveglierà prima al mattino?</h3>
+          <p className="text-warm-600 leading-relaxed mb-4">Di solito no — è uno dei miti più diffusi sul sonno infantile. I bambini che vanno a letto più tardi spesso si svegliano alla stessa ora o addirittura prima, perché accumulano stanchezza. Anticipare la nanna tende invece a migliorare la qualità del sonno notturno complessivo.</p>
+
+          <h3 className="font-serif font-semibold text-warm-700 text-xl mt-8 mb-3">Di quanti minuti al giorno posso anticipare la nanna senza destabilizzare il bambino?</h3>
+          <p className="text-warm-600 leading-relaxed mb-4">Si consiglia di anticipare di 15-20 minuti ogni 2-3 giorni. Questo approccio graduale permette al corpo del bambino di adattarsi senza stress, evitando reazioni negative come difficoltà ad addormentarsi o risvegli notturni.</p>
+
+          <h3 className="font-serif font-semibold text-warm-700 text-xl mt-8 mb-3">Qual è l&apos;orario ideale per la nanna in base all&apos;età?</h3>
+          <p className="text-warm-600 leading-relaxed mb-4">Dai 3 mesi in poi, l&apos;orario ottimale si aggira tra le 20:00 e le 21:00. Dai 4 mesi in su, la finestra ideale è tra le 19:00 e le 20:30. Questi orari sono in linea con il bioritmo naturale del bambino e favoriscono un sonno notturno più lungo e riposante.</p>
+
+          <h3 className="font-serif font-semibold text-warm-700 text-xl mt-8 mb-3">La nanna tardiva è collegata alla stanchezza eccessiva?</h3>
+          <p className="text-warm-600 leading-relaxed mb-4">Sì, spesso i bambini che vanno a letto tardi sono in realtà sovrastimolati e sovraaffaticati. Quando il bambino rimane sveglio troppo a lungo, il corpo rilascia cortisolo e adrenalina per compensare, rendendo l&apos;addormentamento ancora più difficile e il sonno meno profondo.</p>
+
+          <h3 className="font-serif font-semibold text-warm-700 text-xl mt-8 mb-3">Quanto tempo ci vuole per adattarsi al nuovo orario della nanna?</h3>
+          <p className="text-warm-600 leading-relaxed mb-4">Con il metodo graduale di 15-20 minuti ogni 2-3 giorni, la maggior parte dei bambini si adatta in 1-2 settimane. Le prime serate possono essere un po&apos; più agitate, ma la costanza porta rapidamente a un miglioramento visibile nel comportamento serale e nella qualità del sonno.</p>
+
           {/* Author Box */}
           <div className="mt-12 border-t border-blush-100 pt-10 flex gap-5 items-start">
             <div className="w-16 h-16 rounded-full overflow-hidden flex-shrink-0">

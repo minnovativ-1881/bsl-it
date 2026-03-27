@@ -248,6 +248,24 @@ export default function FabbisognoSonnoBambinoPage() {
             </Link>
           </div>
 
+          {/* FAQ */}
+          <h2 className="font-serif font-semibold text-warm-800 text-2xl mt-10 mb-4">FAQ – Domande frequenti</h2>
+
+          <h3 className="font-serif font-semibold text-warm-700 text-xl mt-8 mb-3">Di quante ore di sonno ha bisogno il mio bambino in base all&apos;età?</h3>
+          <p className="text-warm-600 leading-relaxed mb-4">I neonati hanno bisogno di 16-18 ore totali nelle 24 ore. Tra i 4 e gli 11 mesi il fabbisogno scende a 14-15 ore. A 2 anni si aggirano sulle 12-13 ore, e dai 4 anni in poi bastano circa 11-12 ore. Questi valori includono sia il sonno notturno che i pisolini diurni.</p>
+
+          <h3 className="font-serif font-semibold text-warm-700 text-xl mt-8 mb-3">Il mio bambino dorme troppo di giorno? Questo influisce sul sonno notturno?</h3>
+          <p className="text-warm-600 leading-relaxed mb-4">Solo in parte. Un bambino che dorme troppo poco di giorno di solito è più stanco la sera e dorme peggio di notte, non meglio. Tuttavia, se i pisolini diurni sono eccessivamente lunghi o avvengono troppo tardi nel pomeriggio, possono spostare l&apos;orario della nanna in avanti. L&apos;equilibrio tra sonno diurno e notturno varia con l&apos;età.</p>
+
+          <h3 className="font-serif font-semibold text-warm-700 text-xl mt-8 mb-3">Cosa sono le finestre di veglia e come le uso?</h3>
+          <p className="text-warm-600 leading-relaxed mb-4">Le finestre di veglia indicano quanto tempo un bambino può stare sveglio tra un sonno e l&apos;altro prima di diventare sovraffaticato. Per un neonato sono 30-90 minuti, per un bambino di 6-8 mesi 2-3 ore, per un toddler con un pisolino fino a 5-5,5 ore. Rispettare queste finestre è uno dei fattori più importanti per un sonno sereno.</p>
+
+          <h3 className="font-serif font-semibold text-warm-700 text-xl mt-8 mb-3">Come riconosco che il mio bambino è cronicamente sovraffaticato?</h3>
+          <p className="text-warm-600 leading-relaxed mb-4">I segnali includono: difficoltà ad addormentarsi nonostante la stanchezza evidente, risvegli frequenti di notte, risvegli molto precoci al mattino, irritabilità e capricci durante il giorno, e pisolini molto brevi (meno di 30-45 minuti). Un bambino costantemente sovraffaticato ha bisogno di dormire di più, non di meno.</p>
+
+          <h3 className="font-serif font-semibold text-warm-700 text-xl mt-8 mb-3">Come trovo il giusto equilibrio tra sonno diurno e notturno?</h3>
+          <p className="text-warm-600 leading-relaxed mb-4">La chiave è osservare i segnali di sonno del bambino e rispettare le finestre di veglia adatte alla sua età. Tenere un diario del sonno per una settimana aiuta a capire i ritmi individuali. In generale, i bambini sotto i 2 anni dovrebbero dormire almeno 10 ore di notte, integrando il resto con pisolini diurni adeguati all&apos;età.</p>
+
           {/* Author Box */}
           <div className="mt-12 border-t border-blush-100 pt-10 flex gap-5 items-start">
             <div className="w-16 h-16 rounded-full overflow-hidden flex-shrink-0">

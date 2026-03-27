@@ -264,6 +264,24 @@ export default function BambinoPiangeNannaPage() {
             </Link>
           </div>
 
+          {/* FAQ */}
+          <h2 className="font-serif font-semibold text-warm-800 text-2xl mt-10 mb-4">FAQ – Domande frequenti</h2>
+
+          <h3 className="font-serif font-semibold text-warm-700 text-xl mt-8 mb-3">È normale che il mio bambino pianga ogni volta prima del pisolino o della nanna?</h3>
+          <p className="text-warm-600 leading-relaxed mb-4">Un po&apos; di protesta prima di dormire è comune, soprattutto nei neonati e nei bambini piccoli. Tuttavia, se il pianto è intenso e si ripete costantemente, vale la pena indagarne la causa. Spesso si tratta di stanchezza eccessiva, sovrastimolazione o una finestra di veglia troppo lunga — tutti aspetti su cui si può intervenire.</p>
+
+          <h3 className="font-serif font-semibold text-warm-700 text-xl mt-8 mb-3">Come riconosco se il mio bambino piange perché è troppo stanco?</h3>
+          <p className="text-warm-600 leading-relaxed mb-4">I segnali tipici di stanchezza eccessiva includono: sfregamento degli occhi, sbadigli frequenti, irritabilità improvvisa, iperattività paradossale, e richiesta insistente del seno anche senza fame. Se questi segnali precedono il pianto, la finestra di veglia è probabilmente troppo lunga per la sua età.</p>
+
+          <h3 className="font-serif font-semibold text-warm-700 text-xl mt-8 mb-3">Cosa non devo fare quando il mio bambino piange prima di dormire?</h3>
+          <p className="text-warm-600 leading-relaxed mb-4">Evita di provare troppe tecniche diverse in modo frenetico — questo può agitare ancora di più il bambino. Non scuotere mai il bambino per calmarlo, poiché può causare gravi danni fisici. E non perdere la fiducia in te stessa: il pianto del bambino non significa che stai sbagliando qualcosa.</p>
+
+          <h3 className="font-serif font-semibold text-warm-700 text-xl mt-8 mb-3">Perché il mio bambino piange di più la sera? È normale?</h3>
+          <p className="text-warm-600 leading-relaxed mb-4">Sì, il cosiddetto &quot;pianto serale&quot; è molto comune, soprattutto nei primi 3-4 mesi. Il bambino ha accumulato stimoli per tutto il giorno ed ha bisogno di scaricarli. In molti casi, anticipare la routine serale di 15-30 minuti riduce significativamente questi momenti di agitazione.</p>
+
+          <h3 className="font-serif font-semibold text-warm-700 text-xl mt-8 mb-3">Dopo quanto tempo migliorerà la situazione del pianto pre-nanna?</h3>
+          <p className="text-warm-600 leading-relaxed mb-4">Con cambiamenti coerenti — come rispettare le finestre di veglia, creare una routine serale e anticipare la nanna — molti genitori notano un miglioramento già dopo 1-2 settimane. Alcune fasi di regressione (come intorno ai 4 mesi) possono temporaneamente peggiorare la situazione, ma si tratta di periodi passeggeri.</p>
+
           {/* Author Box */}
           <div className="mt-12 border-t border-blush-100 pt-10 flex gap-5 items-start">
             <div className="w-16 h-16 rounded-full overflow-hidden flex-shrink-0">
