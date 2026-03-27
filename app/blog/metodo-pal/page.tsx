@@ -151,6 +151,23 @@ export default function MetodoPalPage() {
             </Link>
           </div>
 
+          <h2 className="font-serif font-semibold text-warm-800 text-2xl mt-10 mb-4">FAQ – Domande frequenti</h2>
+
+          <h3 className="font-serif font-semibold text-warm-700 text-xl mt-8 mb-3">Cos&apos;è esattamente il Metodo PAL?</h3>
+          <p className="text-warm-600 leading-relaxed mb-4">Il Metodo PAL (&quot;Pianto Abbracciato con Amore&quot;) è un approccio delicato all&apos;apprendimento del sonno ispirato agli studi della Dr. Aletha J. Solter. Invece di distrarre il bambino o calmarlo artificialmente, il genitore lo tiene tra le braccia lasciandolo esprimere le sue emozioni attraverso il pianto. Questo processo di rilascio porta spesso a un sonno più tranquillo e prolungato.</p>
+
+          <h3 className="font-serif font-semibold text-warm-700 text-xl mt-8 mb-3">A partire da quale età si può applicare il Metodo PAL?</h3>
+          <p className="text-warm-600 leading-relaxed mb-4">Il Metodo PAL è particolarmente efficace tra i 4 e i 7 mesi, quando il bambino attraversa importanti trasformazioni nel sonno. Tuttavia, può essere utile anche per neonati più piccoli o bambini più grandi. L&apos;importante è che il genitore sia presente e il bambino sia tenuto in modo amorevole durante tutto il processo.</p>
+
+          <h3 className="font-serif font-semibold text-warm-700 text-xl mt-8 mb-3">Quanto tempo ci vuole prima di vedere dei risultati?</h3>
+          <p className="text-warm-600 leading-relaxed mb-4">Molti genitori notano un miglioramento già dopo pochi giorni. Il processo varia da bambino a bambino: alcuni rispondono molto velocemente, altri hanno bisogno di più tempo. In genere, con costanza e presenza amorevole, i risultati si vedono entro una o due settimane.</p>
+
+          <h3 className="font-serif font-semibold text-warm-700 text-xl mt-8 mb-3">Il Metodo PAL è diverso dal &quot;pianto controllato&quot; o dal cry-it-out?</h3>
+          <p className="text-warm-600 leading-relaxed mb-4">Sì, in modo significativo. Con il Metodo PAL il bambino non è mai solo: viene sempre tenuto in braccio e accompagnato con presenza fisica e parole di comprensione. Non si tratta di lasciarlo piangere da solo, ma di permettergli di liberare le emozioni in un contesto sicuro e amorevole.</p>
+
+          <h3 className="font-serif font-semibold text-warm-700 text-xl mt-8 mb-3">Il Metodo PAL funziona anche per i bambini allattati al seno?</h3>
+          <p className="text-warm-600 leading-relaxed mb-4">Sì, anzi il Metodo PAL è particolarmente utile per le mamme che allattano e che si trovano a usare il seno come unico strumento di calma. Il metodo aiuta a separare gradualmente il momento dell&apos;allattamento da quello del sonno, riducendo i risvegli notturni legati alla suzione come unica associazione del sonno.</p>
+
           {/* Author Box */}
           <div className="mt-12 border-t border-blush-100 pt-10 flex gap-5 items-start">
             <div className="w-16 h-16 rounded-full overflow-hidden flex-shrink-0">

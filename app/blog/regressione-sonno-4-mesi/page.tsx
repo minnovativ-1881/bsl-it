@@ -328,6 +328,23 @@ export default function RegressoneSonno4MesiPage() {
             <strong>Sarah</strong>
           </p>
 
+          <h2 className="font-serif font-semibold text-warm-800 text-2xl mt-10 mb-4">FAQ – Domande frequenti</h2>
+
+          <h3 className="font-serif font-semibold text-warm-700 text-xl mt-8 mb-3">Quanto dura la regressione del sonno dei 4 mesi?</h3>
+          <p className="text-warm-600 leading-relaxed mb-4">Di solito dura tra le 2 e le 6 settimane. Se i problemi di sonno persistono oltre le 6 settimane, non si tratta più di una semplice regressione, ma di difficoltà a lungo termine che vale la pena affrontare con strategie specifiche.</p>
+
+          <h3 className="font-serif font-semibold text-warm-700 text-xl mt-8 mb-3">La regressione del sonno dei 4 mesi è davvero inevitabile per tutti i bambini?</h3>
+          <p className="text-warm-600 leading-relaxed mb-4">La maturazione del sonno che avviene intorno ai 4 mesi è un processo biologico universale. Tuttavia, non tutti i bambini la vivono con la stessa intensità: alcuni attraversano questa fase con pochi cambiamenti, mentre altri mostrano disturbi del sonno molto marcati. Dipende molto dal temperamento del bambino e dalle sue abitudini di addormentamento.</p>
+
+          <h3 className="font-serif font-semibold text-warm-700 text-xl mt-8 mb-3">Quali sono i migliori consigli pratici per sopravvivere a questa fase?</h3>
+          <p className="text-warm-600 leading-relaxed mb-4">Le strategie più utili sono: accettare il maggiore bisogno di vicinanza del bambino, sperimentare nuovi metodi di supporto come la fascia o il passeggino, stabilire una routine serale costante e chiedere aiuto a familiari e amici. Soprattutto, è importante prendersi cura anche di sé stesse come mamme.</p>
+
+          <h3 className="font-serif font-semibold text-warm-700 text-xl mt-8 mb-3">Il cambiamento del sonno ai 4 mesi è permanente?</h3>
+          <p className="text-warm-600 leading-relaxed mb-4">Sì. A differenza delle altre regressioni del sonno, quella dei 4 mesi porta un cambiamento strutturale e permanente nel modo in cui il tuo bambino dorme. Da questo momento in poi, i suoi cicli di sonno si alternano tra fasi leggere e profonde, come negli adulti. Questo non significa però che i problemi di sonno dureranno per sempre.</p>
+
+          <h3 className="font-serif font-semibold text-warm-700 text-xl mt-8 mb-3">È indicato iniziare il sleep coaching durante la regressione dei 4 mesi?</h3>
+          <p className="text-warm-600 leading-relaxed mb-4">In genere no. Un bambino di 4 mesi è ancora neurologicamente immaturo per addormentarsi in autonomia. La raccomandazione è di aspettare che la fase acuta sia passata e che il bambino abbia almeno 5–6 mesi prima di introdurre metodi di apprendimento del sonno, e sempre con approcci molto dolci e rispettosi del legame.</p>
+
           {/* Author Box */}
           <div className="mt-12 border-t border-blush-100 pt-10 flex gap-5 items-start">
             <div className="w-16 h-16 rounded-full overflow-hidden flex-shrink-0">
